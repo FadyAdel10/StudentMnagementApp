@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="F:/ITI/Task management app/TaskManagement/TaskManagement.Application/StudentSkillManagement.Application.csproj" />
+  <Project Path="F:/ITI/Task management app/TaskManagement/TaskManagement.Domain/StudentSkillManagement.Domain.csproj" />
+  <Project Path="F:/ITI/Task management app/TaskManagement/TaskManagement.Infrastructure/StudentSkillManagement.Infrastructure.csproj" />
+  <Project Path="F:/ITI/Task management app/TaskManagement/TaskManagement.Presentation/StudentSkillManagement.Presentation.csproj" />
+</Solution>
