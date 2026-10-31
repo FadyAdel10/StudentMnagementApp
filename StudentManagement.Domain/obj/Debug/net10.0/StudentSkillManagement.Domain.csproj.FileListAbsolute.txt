@@ -1,0 +1,13 @@
+F:\ITI\Student management app\StudentManagement\StudentManagement.Domain\obj\Debug\net10.0\StudentSkillManagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
+F:\ITI\Student management app\StudentManagement\StudentManagement.Domain\obj\Debug\net10.0\StudentSkillManagement.Domain.AssemblyInfoInputs.cache
+F:\ITI\Student management app\StudentManagement\StudentManagement.Domain\obj\Debug\net10.0\StudentSkillManagement.Domain.AssemblyInfo.cs
+F:\ITI\Student management app\StudentManagement\StudentManagement.Domain\obj\Debug\net10.0\StudentSkillManagement.Domain.csproj.CoreCompileInputs.cache
+F:\ITI\Student management app\StudentManagement\StudentManagement.Domain\obj\Debug\net10.0\StudentSkillManagement.Domain.sourcelink.json
+F:\ITI\Student management app\StudentManagement\StudentManagement.Domain\bin\Debug\net10.0\StudentSkillManagement.Domain.deps.json
+F:\ITI\Student management app\StudentManagement\StudentManagement.Domain\bin\Debug\net10.0\StudentSkillManagement.Domain.dll
+F:\ITI\Student management app\StudentManagement\StudentManagement.Domain\bin\Debug\net10.0\StudentSkillManagement.Domain.pdb
+F:\ITI\Student management app\StudentManagement\StudentManagement.Domain\obj\Debug\net10.0\StudentSkillManagement.Domain.dll
+F:\ITI\Student management app\StudentManagement\StudentManagement.Domain\obj\Debug\net10.0\refint\StudentSkillManagement.Domain.dll
+F:\ITI\Student management app\StudentManagement\StudentManagement.Domain\obj\Debug\net10.0\StudentSkillManagement.Domain.pdb
+F:\ITI\Student management app\StudentManagement\StudentManagement.Domain\obj\Debug\net10.0\ref\StudentSkillManagement.Domain.dll
+F:\ITI\Student management app\StudentManagement\StudentManagement.Domain\obj\Debug\net10.0\StudentS.15526FDD.Up2Date

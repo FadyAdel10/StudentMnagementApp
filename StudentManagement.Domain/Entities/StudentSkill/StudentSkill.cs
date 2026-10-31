@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StudentSkillManagement.Domain.Entities.Student;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -9,6 +10,9 @@ namespace StudentSkillManagement.Domain.Entities.StudentSkill
         public Guid StudentId { get; private set; }
         public Guid SkillId { get; private set; }
         public ProficiencyLevel ProficiencyLevel { get; private set; }
+        public Student.Student Student { get; private set; }
+        = null!;
+        public Skill.Skill Skill { get; private set; } = null!;
 
         private StudentSkill()
         {
@@ -20,11 +24,11 @@ namespace StudentSkillManagement.Domain.Entities.StudentSkill
             Guid skillId,
             ProficiencyLevel proficiencyLevel)
         {
-            if(StudentId == Guid.Empty)
+            if(studentId == Guid.Empty)
             {
                 throw new ArgumentException("Student ID is required.",nameof(studentId));
             }
-            if(SkillId == Guid.Empty)
+            if(skillId == Guid.Empty)
             {
                 throw new ArgumentException("Skill ID is required.",nameof(skillId));
             }
@@ -61,22 +65,6 @@ namespace StudentSkillManagement.Domain.Entities.StudentSkill
             ValidateProficiency(proficiency);
 
             ProficiencyLevel = proficiency;
-        }
-
-        public void Deactivate()
-        {
-            IsActive = false;
-        }
-
-        public void Activate()
-        {
-            IsActive = true;
-        }
-
-        private void SetName(string firstName, string lastName)
-        {
-            FirstName = NormalizeRequired(firstName, nameof(firstName));
-            LastName = NormalizeRequired(lastName, nameof(lastName));
         }
 
     }

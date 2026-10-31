@@ -15,6 +15,9 @@ namespace StudentSkillManagement.Domain.Entities.Skill
 
         public bool IsActive { get; private set; }
 
+        public ICollection<StudentSkill.StudentSkill> StudentSkills { get; private set; }
+        = new List<StudentSkill.StudentSkill>();
+
         private Skill()
         {
             // Reserved for ORM materialization.

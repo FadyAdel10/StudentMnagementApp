@@ -8,11 +8,17 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.14" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.14">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="10.3.1" />
+    <PackageReference Include="System.Security.Cryptography.Pkcs" Version="10.0.14" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TaskManagement.Application\StudentSkillManagement.Application.csproj" />
-    <ProjectReference Include="..\TaskManagement.Infrastructure\StudentSkillManagement.Infrastructure.csproj" />
+    <ProjectReference Include="..\StudentManagement.Application\StudentSkillManagement.Application.csproj" />
+    <ProjectReference Include="..\StudentManagement.Infrastructure\StudentSkillManagement.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

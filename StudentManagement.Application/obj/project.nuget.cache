@@ -1,20 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "d3xCDe7TZik=",
-  "success": false,
+  "dgSpecHash": "v2d9b9pLVGc=",
+  "success": true,
   "projectFilePath": "F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Application\\StudentSkillManagement.Application.csproj",
-  "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'F:\\ITI\\Student management app\\StudentManagement\\TaskManagement.Domain\\StudentSkillManagement.Domain.csproj'. Check that the project reference is valid and that the project file exists.",
-      "projectPath": "F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Application\\StudentSkillManagement.Application.csproj",
-      "filePath": "F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Application\\StudentSkillManagement.Application.csproj",
-      "libraryId": "F:\\ITI\\Student management app\\StudentManagement\\TaskManagement.Domain\\StudentSkillManagement.Domain.csproj",
-      "targetGraphs": [
-        "net10.0"
-      ]
-    }
-  ]
+  "expectedPackageFiles": [
+    "C:\\Users\\pc\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\10.0.14\\microsoft.extensions.configuration.abstractions.10.0.14.nupkg.sha512",
+    "C:\\Users\\pc\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.14\\microsoft.extensions.dependencyinjection.abstractions.10.0.14.nupkg.sha512",
+    "C:\\Users\\pc\\.nuget\\packages\\microsoft.extensions.primitives\\10.0.14\\microsoft.extensions.primitives.10.0.14.nupkg.sha512"
+  ],
+  "logs": []
 }

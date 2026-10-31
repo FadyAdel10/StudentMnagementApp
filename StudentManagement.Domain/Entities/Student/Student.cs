@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using StudentSkillManagement.Domain.Entities.StudentSkill;
 
 namespace StudentSkillManagement.Domain.Entities.Student
 {
@@ -15,6 +16,9 @@ namespace StudentSkillManagement.Domain.Entities.Student
         public string Email { get; private set; } = string.Empty;
 
         public bool IsActive { get; private set; }
+        public ICollection<StudentSkill.StudentSkill> StudentSkills { get; private set; }
+        = new List<StudentSkill.StudentSkill>();
+
 
         private Student()
         {
