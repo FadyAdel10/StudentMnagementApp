@@ -1,8 +1,20 @@
 {
   "version": 2,
-  "dgSpecHash": "oo8UALnHtRg=",
-  "success": true,
-  "projectFilePath": "F:\\ITI\\Task management app\\TaskManagement\\TaskManagement.Application\\StudentSkillManagement.Application.csproj",
+  "dgSpecHash": "d3xCDe7TZik=",
+  "success": false,
+  "projectFilePath": "F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Application\\StudentSkillManagement.Application.csproj",
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'F:\\ITI\\Student management app\\StudentManagement\\TaskManagement.Domain\\StudentSkillManagement.Domain.csproj'. Check that the project reference is valid and that the project file exists.",
+      "projectPath": "F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Application\\StudentSkillManagement.Application.csproj",
+      "filePath": "F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Application\\StudentSkillManagement.Application.csproj",
+      "libraryId": "F:\\ITI\\Student management app\\StudentManagement\\TaskManagement.Domain\\StudentSkillManagement.Domain.csproj",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
 }

@@ -36,66 +36,6 @@
             "related": ".pdb;.xml"
           }
         }
-      },
-      "StudentSkillManagement.Application/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v10.0",
-        "dependencies": {
-          "StudentSkillManagement.Domain": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/StudentSkillManagement.Application.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/StudentSkillManagement.Application.dll": {}
-        }
-      },
-      "StudentSkillManagement.Domain/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v10.0",
-        "compile": {
-          "bin/placeholder/StudentSkillManagement.Domain.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/StudentSkillManagement.Domain.dll": {}
-        }
-      },
-      "StudentSkillManagement.Infrastructure/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v10.0",
-        "dependencies": {
-          "TaskManagement.Application": "1.0.0",
-          "TaskManagement.Domain": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/StudentSkillManagement.Infrastructure.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/StudentSkillManagement.Infrastructure.dll": {}
-        }
-      },
-      "TaskManagement.Application/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v10.0",
-        "dependencies": {
-          "TaskManagement.Domain": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/TaskManagement.Application.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/TaskManagement.Application.dll": {}
-        }
-      },
-      "TaskManagement.Domain/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v10.0",
-        "compile": {
-          "bin/placeholder/TaskManagement.Domain.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/TaskManagement.Domain.dll": {}
-        }
       }
     }
   },
@@ -135,38 +75,13 @@
         "microsoft.openapi.2.12.2.nupkg.sha512",
         "microsoft.openapi.nuspec"
       ]
-    },
-    "StudentSkillManagement.Application/1.0.0": {
-      "type": "project",
-      "path": "../TaskManagement.Application/StudentSkillManagement.Application.csproj",
-      "msbuildProject": "../TaskManagement.Application/StudentSkillManagement.Application.csproj"
-    },
-    "StudentSkillManagement.Domain/1.0.0": {
-      "type": "project",
-      "path": "../TaskManagement.Domain/StudentSkillManagement.Domain.csproj",
-      "msbuildProject": "../TaskManagement.Domain/StudentSkillManagement.Domain.csproj"
-    },
-    "StudentSkillManagement.Infrastructure/1.0.0": {
-      "type": "project",
-      "path": "../TaskManagement.Infrastructure/StudentSkillManagement.Infrastructure.csproj",
-      "msbuildProject": "../TaskManagement.Infrastructure/StudentSkillManagement.Infrastructure.csproj"
-    },
-    "TaskManagement.Application/1.0.0": {
-      "type": "project",
-      "path": "../TaskManagement.Application/TaskManagement.Application.csproj",
-      "msbuildProject": "../TaskManagement.Application/TaskManagement.Application.csproj"
-    },
-    "TaskManagement.Domain/1.0.0": {
-      "type": "project",
-      "path": "../TaskManagement.Domain/TaskManagement.Domain.csproj",
-      "msbuildProject": "../TaskManagement.Domain/TaskManagement.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net10.0": [
-      "Microsoft.AspNetCore.OpenApi >= 10.0.14",
-      "StudentSkillManagement.Application >= 1.0.0",
-      "StudentSkillManagement.Infrastructure >= 1.0.0"
+      "F:\\ITI\\Student management app\\StudentManagement\\TaskManagement.Application\\StudentSkillManagement.Application.csproj",
+      "F:\\ITI\\Student management app\\StudentManagement\\TaskManagement.Infrastructure\\StudentSkillManagement.Infrastructure.csproj",
+      "Microsoft.AspNetCore.OpenApi >= 10.0.14"
     ]
   },
   "packageFolders": {
@@ -176,11 +91,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\ITI\\Task management app\\TaskManagement\\TaskManagement.Presentation\\StudentSkillManagement.Presentation.csproj",
+      "projectUniqueName": "F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Presentation\\StudentSkillManagement.Presentation.csproj",
       "projectName": "StudentSkillManagement.Presentation",
-      "projectPath": "F:\\ITI\\Task management app\\TaskManagement\\TaskManagement.Presentation\\StudentSkillManagement.Presentation.csproj",
+      "projectPath": "F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Presentation\\StudentSkillManagement.Presentation.csproj",
       "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-      "outputPath": "F:\\ITI\\Task management app\\TaskManagement\\TaskManagement.Presentation\\obj\\",
+      "outputPath": "F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Presentation\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -202,11 +117,11 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
-            "F:\\ITI\\Task management app\\TaskManagement\\TaskManagement.Application\\StudentSkillManagement.Application.csproj": {
-              "projectPath": "F:\\ITI\\Task management app\\TaskManagement\\TaskManagement.Application\\StudentSkillManagement.Application.csproj"
+            "F:\\ITI\\Student management app\\StudentManagement\\TaskManagement.Application\\StudentSkillManagement.Application.csproj": {
+              "projectPath": "F:\\ITI\\Student management app\\StudentManagement\\TaskManagement.Application\\StudentSkillManagement.Application.csproj"
             },
-            "F:\\ITI\\Task management app\\TaskManagement\\TaskManagement.Infrastructure\\StudentSkillManagement.Infrastructure.csproj": {
-              "projectPath": "F:\\ITI\\Task management app\\TaskManagement\\TaskManagement.Infrastructure\\StudentSkillManagement.Infrastructure.csproj"
+            "F:\\ITI\\Student management app\\StudentManagement\\TaskManagement.Infrastructure\\StudentSkillManagement.Infrastructure.csproj": {
+              "projectPath": "F:\\ITI\\Student management app\\StudentManagement\\TaskManagement.Infrastructure\\StudentSkillManagement.Infrastructure.csproj"
             }
           }
         }
@@ -669,5 +584,25 @@
         }
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'F:\\ITI\\Student management app\\StudentManagement\\TaskManagement.Application\\StudentSkillManagement.Application.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "F:\\ITI\\Student management app\\StudentManagement\\TaskManagement.Application\\StudentSkillManagement.Application.csproj",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'F:\\ITI\\Student management app\\StudentManagement\\TaskManagement.Infrastructure\\StudentSkillManagement.Infrastructure.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "F:\\ITI\\Student management app\\StudentManagement\\TaskManagement.Infrastructure\\StudentSkillManagement.Infrastructure.csproj",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
 }

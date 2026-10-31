@@ -1,48 +1,13 @@
 {
   "version": 4,
   "targets": {
-    "net10.0": {
-      "TaskManagement.Application/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v10.0",
-        "dependencies": {
-          "TaskManagement.Domain": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/TaskManagement.Application.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/TaskManagement.Application.dll": {}
-        }
-      },
-      "TaskManagement.Domain/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v10.0",
-        "compile": {
-          "bin/placeholder/TaskManagement.Domain.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/TaskManagement.Domain.dll": {}
-        }
-      }
-    }
+    "net10.0": {}
   },
-  "libraries": {
-    "TaskManagement.Application/1.0.0": {
-      "type": "project",
-      "path": "../TaskManagement.Application/TaskManagement.Application.csproj",
-      "msbuildProject": "../TaskManagement.Application/TaskManagement.Application.csproj"
-    },
-    "TaskManagement.Domain/1.0.0": {
-      "type": "project",
-      "path": "../TaskManagement.Domain/TaskManagement.Domain.csproj",
-      "msbuildProject": "../TaskManagement.Domain/TaskManagement.Domain.csproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
     "net10.0": [
-      "TaskManagement.Application >= 1.0.0",
-      "TaskManagement.Domain >= 1.0.0"
+      "F:\\ITI\\Student management app\\StudentManagement\\TaskManagement.Application\\TaskManagement.Application.csproj",
+      "F:\\ITI\\Student management app\\StudentManagement\\TaskManagement.Domain\\TaskManagement.Domain.csproj"
     ]
   },
   "packageFolders": {
@@ -52,11 +17,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\ITI\\Task management app\\TaskManagement\\TaskManagement.Infrastructure\\StudentSkillManagement.Infrastructure.csproj",
+      "projectUniqueName": "F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Infrastructure\\StudentSkillManagement.Infrastructure.csproj",
       "projectName": "StudentSkillManagement.Infrastructure",
-      "projectPath": "F:\\ITI\\Task management app\\TaskManagement\\TaskManagement.Infrastructure\\StudentSkillManagement.Infrastructure.csproj",
+      "projectPath": "F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Infrastructure\\StudentSkillManagement.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-      "outputPath": "F:\\ITI\\Task management app\\TaskManagement\\TaskManagement.Infrastructure\\obj\\",
+      "outputPath": "F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -78,11 +43,11 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
-            "F:\\ITI\\Task management app\\TaskManagement\\TaskManagement.Application\\TaskManagement.Application.csproj": {
-              "projectPath": "F:\\ITI\\Task management app\\TaskManagement\\TaskManagement.Application\\TaskManagement.Application.csproj"
+            "F:\\ITI\\Student management app\\StudentManagement\\TaskManagement.Application\\TaskManagement.Application.csproj": {
+              "projectPath": "F:\\ITI\\Student management app\\StudentManagement\\TaskManagement.Application\\TaskManagement.Application.csproj"
             },
-            "F:\\ITI\\Task management app\\TaskManagement\\TaskManagement.Domain\\TaskManagement.Domain.csproj": {
-              "projectPath": "F:\\ITI\\Task management app\\TaskManagement\\TaskManagement.Domain\\TaskManagement.Domain.csproj"
+            "F:\\ITI\\Student management app\\StudentManagement\\TaskManagement.Domain\\TaskManagement.Domain.csproj": {
+              "projectPath": "F:\\ITI\\Student management app\\StudentManagement\\TaskManagement.Domain\\TaskManagement.Domain.csproj"
             }
           }
         }
@@ -396,5 +361,25 @@
         }
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'F:\\ITI\\Student management app\\StudentManagement\\TaskManagement.Domain\\TaskManagement.Domain.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "F:\\ITI\\Student management app\\StudentManagement\\TaskManagement.Domain\\TaskManagement.Domain.csproj",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'F:\\ITI\\Student management app\\StudentManagement\\TaskManagement.Application\\TaskManagement.Application.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "F:\\ITI\\Student management app\\StudentManagement\\TaskManagement.Application\\TaskManagement.Application.csproj",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
 }
