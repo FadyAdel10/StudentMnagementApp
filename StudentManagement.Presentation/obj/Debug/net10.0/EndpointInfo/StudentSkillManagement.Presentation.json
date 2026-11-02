@@ -5,6 +5,18 @@
     "version": "1.0"
   },
   "paths": {
+    "/api/Skills": {
+      "get": {
+        "tags": [
+          "Skills"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Students": {
       "post": {
         "tags": [
@@ -202,6 +214,9 @@
     }
   },
   "tags": [
+    {
+      "name": "Skills"
+    },
     {
       "name": "Students"
     }

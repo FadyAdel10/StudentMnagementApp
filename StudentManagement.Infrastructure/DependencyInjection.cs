@@ -23,6 +23,7 @@ namespace StudentSkillManagement.Infrastructure
                 options.UseSqlServer(connectionString));
 
             services.AddScoped<IStudentRepository, StudentRepository>();
+            services.AddScoped<ISkillRepository, SkillRepository>();
 
             return services;
         }

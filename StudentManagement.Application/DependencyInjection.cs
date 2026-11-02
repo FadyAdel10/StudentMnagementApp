@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using StudentSkillManagement.Application.Abstractions.Persistence;
+using StudentSkillManagement.Application.Features.Skills.Queries.GetAllSkills;
 using StudentSkillManagement.Application.Features.Students.Commands.ChangeStudentStatus;
 using StudentSkillManagement.Application.Features.Students.Commands.CreateStudent;
 using StudentSkillManagement.Application.Features.Students.Commands.UpdateStudentProfile;
@@ -23,6 +24,8 @@ namespace StudentSkillManagement.Application
             services.AddScoped<GetAllStudentsQueryHandler>();
             services.AddScoped<UpdateStudentProfileCommandHandler>();
             services.AddScoped<ChangeStudentStatusCommandHandler>();
+
+            services.AddScoped<GetAllSkillsQueryHandler>();
 
             return services;
         }

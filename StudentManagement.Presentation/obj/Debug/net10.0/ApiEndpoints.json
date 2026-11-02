@@ -1,5 +1,15 @@
 [
   {
+    "ContainingType": "StudentSkillManagement.Presentation.Controllers.SkillsController",
+    "Method": "GetAll",
+    "RelativePath": "api/Skills",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "StudentSkillManagement.Presentation.Controllers.StudentsController",
     "Method": "Create",
     "RelativePath": "api/Students",
