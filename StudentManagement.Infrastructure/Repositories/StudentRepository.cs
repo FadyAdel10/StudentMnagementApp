@@ -32,37 +32,36 @@ namespace StudentSkillManagement.Infrastructure.Repositories
             await _context.SaveChangesAsync(cancellationToken);
         }
 
-        public Task<bool> Delete(Guid id, CancellationToken cancellationToken)
+        public async Task<bool> Delete(Guid id, CancellationToken cancellationToken)
         {
-            var studentToDelete = _context.Students.FirstOrDefault(s => s.Id == id);
+            var studentToDelete = await _context.Students.FirstOrDefaultAsync(s => s.Id == id);
             if (studentToDelete == null)
             {
-                return Task.FromResult(false);
+                return false;
             }
              _context.Students.Remove(studentToDelete);
-            return Task.FromResult(true);
+            return true;
         }
 
-        async Task<List<Student>> IStudentRepository.GetAll(CancellationToken cancellationToken)
+        public async Task<List<Student>> GetAll(CancellationToken cancellationToken)
         {
-            //return _context.Students.ToListAsync<Student>(cancellationToken);
-            throw new NotImplementedException();
+            return await _context.Students.ToListAsync<Student>(cancellationToken);
         }
 
-        Task<Student?> IStudentRepository.GetById(Guid id, CancellationToken cancellationToken)
+        public async Task<Student?> GetById(Guid id, CancellationToken cancellationToken)
         {
-            return _context.Students.FirstOrDefaultAsync(s => s.Id == id, cancellationToken);
+            return await _context.Students.FirstOrDefaultAsync(s => s.Id == id, cancellationToken);
         }
 
-        Task<bool> IStudentRepository.Update(Guid id, Student student, CancellationToken cancellationToken)
+        public async Task<bool> Update(Guid id, Student student, CancellationToken cancellationToken)
         {
-            var studentToUpdate = _context.Students.FirstOrDefault(s => s.Id == id);
+            var studentToUpdate = await _context.Students.FirstOrDefaultAsync(s => s.Id == id);
             if(studentToUpdate == null)
             {
-                return Task.FromResult(false);
+                return false;
             }
             studentToUpdate.UpdateProfile(student.FirstName, student.LastName, student.Email);
-            return Task.FromResult(true);
+            return true;
         }
     }
 }

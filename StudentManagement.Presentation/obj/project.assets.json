@@ -3651,23 +3651,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\pc\\.nuget\\packages\\": {},
+    "C:\\Users\\m_haseb\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Presentation\\StudentSkillManagement.Presentation.csproj",
+      "projectUniqueName": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Presentation\\StudentSkillManagement.Presentation.csproj",
       "projectName": "StudentSkillManagement.Presentation",
-      "projectPath": "F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Presentation\\StudentSkillManagement.Presentation.csproj",
-      "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-      "outputPath": "F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Presentation\\obj\\",
+      "projectPath": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Presentation\\StudentSkillManagement.Presentation.csproj",
+      "packagesPath": "C:\\Users\\m_haseb\\.nuget\\packages\\",
+      "outputPath": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Presentation\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\m_haseb\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3683,11 +3683,11 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
-            "F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Application\\StudentSkillManagement.Application.csproj": {
-              "projectPath": "F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Application\\StudentSkillManagement.Application.csproj"
+            "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Application\\StudentSkillManagement.Application.csproj": {
+              "projectPath": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Application\\StudentSkillManagement.Application.csproj"
             },
-            "F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Infrastructure\\StudentSkillManagement.Infrastructure.csproj": {
-              "projectPath": "F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Infrastructure\\StudentSkillManagement.Infrastructure.csproj"
+            "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Infrastructure\\StudentSkillManagement.Infrastructure.csproj": {
+              "projectPath": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Infrastructure\\StudentSkillManagement.Infrastructure.csproj"
             }
           }
         }

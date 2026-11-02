@@ -1,94 +1,125 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "F:\\ITI\\Student management app\\StudentManagement\\",
+  "WorkspaceRootPath": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3217ABD9-27DB-7014-082C-A392FB643C26}|StudentManagement.Application\\StudentSkillManagement.Application.csproj|f:\\iti\\student management app\\studentmanagement\\studentmanagement.application\\features\\students\\queries\\getstudentbyid\\getstudentbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3217ABD9-27DB-7014-082C-A392FB643C26}|StudentManagement.Application\\StudentSkillManagement.Application.csproj|solutionrelative:studentmanagement.application\\features\\students\\queries\\getstudentbyid\\getstudentbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2FD2E085-7881-2411-6A59-287CEDB3D743}|StudentManagement.Presentation\\StudentSkillManagement.Presentation.csproj|c:\\iti\\studentmanagementapp\\studentmnagementapp\\studentmanagement.presentation\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FD2E085-7881-2411-6A59-287CEDB3D743}|StudentManagement.Presentation\\StudentSkillManagement.Presentation.csproj|solutionrelative:studentmanagement.presentation\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3217ABD9-27DB-7014-082C-A392FB643C26}|StudentManagement.Application\\StudentSkillManagement.Application.csproj|f:\\iti\\student management app\\studentmanagement\\studentmanagement.application\\features\\students\\queries\\getstudentbyid\\getstudentbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3217ABD9-27DB-7014-082C-A392FB643C26}|StudentManagement.Application\\StudentSkillManagement.Application.csproj|solutionrelative:studentmanagement.application\\features\\students\\queries\\getstudentbyid\\getstudentbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CFB0350E-31D4-8F7C-740A-D35B4640A9D0}|StudentManagement.Application\\StudentSkillManagement.Application.csproj|c:\\iti\\studentmanagementapp\\studentmnagementapp\\studentmanagement.application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CFB0350E-31D4-8F7C-740A-D35B4640A9D0}|StudentManagement.Application\\StudentSkillManagement.Application.csproj|solutionrelative:studentmanagement.application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3217ABD9-27DB-7014-082C-A392FB643C26}|StudentManagement.Application\\StudentSkillManagement.Application.csproj|f:\\iti\\student management app\\studentmanagement\\studentmanagement.application\\features\\students\\queries\\getstudentbyid\\studentdetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3217ABD9-27DB-7014-082C-A392FB643C26}|StudentManagement.Application\\StudentSkillManagement.Application.csproj|solutionrelative:studentmanagement.application\\features\\students\\queries\\getstudentbyid\\studentdetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CFB0350E-31D4-8F7C-740A-D35B4640A9D0}|StudentManagement.Application\\StudentSkillManagement.Application.csproj|c:\\iti\\studentmanagementapp\\studentmnagementapp\\studentmanagement.application\\features\\students\\commands\\changestudentstatus\\changestudentstatuscommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CFB0350E-31D4-8F7C-740A-D35B4640A9D0}|StudentManagement.Application\\StudentSkillManagement.Application.csproj|solutionrelative:studentmanagement.application\\features\\students\\commands\\changestudentstatus\\changestudentstatuscommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{10B27AFE-906E-DF09-B843-58F0E13D99DF}|StudentManagement.Presentation\\StudentSkillManagement.Presentation.csproj|f:\\iti\\student management app\\studentmanagement\\studentmanagement.presentation\\contracts\\students\\createstudentrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{10B27AFE-906E-DF09-B843-58F0E13D99DF}|StudentManagement.Presentation\\StudentSkillManagement.Presentation.csproj|solutionrelative:studentmanagement.presentation\\contracts\\students\\createstudentrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CFB0350E-31D4-8F7C-740A-D35B4640A9D0}|StudentManagement.Application\\StudentSkillManagement.Application.csproj|c:\\iti\\studentmanagementapp\\studentmnagementapp\\studentmanagement.application\\features\\students\\commands\\changestudentstatus\\changestudentstatuscommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CFB0350E-31D4-8F7C-740A-D35B4640A9D0}|StudentManagement.Application\\StudentSkillManagement.Application.csproj|solutionrelative:studentmanagement.application\\features\\students\\commands\\changestudentstatus\\changestudentstatuscommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F054E8AB-B9FE-8874-BB90-4A476A4738D0}|StudentManagement.Infrastructure\\StudentSkillManagement.Infrastructure.csproj|f:\\iti\\student management app\\studentmanagement\\studentmanagement.infrastructure\\repositories\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F054E8AB-B9FE-8874-BB90-4A476A4738D0}|StudentManagement.Infrastructure\\StudentSkillManagement.Infrastructure.csproj|solutionrelative:studentmanagement.infrastructure\\repositories\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2FD2E085-7881-2411-6A59-287CEDB3D743}|StudentManagement.Presentation\\StudentSkillManagement.Presentation.csproj|c:\\iti\\studentmanagementapp\\studentmnagementapp\\studentmanagement.presentation\\contracts\\students\\changestatusrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FD2E085-7881-2411-6A59-287CEDB3D743}|StudentManagement.Presentation\\StudentSkillManagement.Presentation.csproj|solutionrelative:studentmanagement.presentation\\contracts\\students\\changestatusrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{131891EE-30AC-EB1D-31CE-AD700BBB9546}|StudentManagement.Domain\\StudentSkillManagement.Domain.csproj|f:\\iti\\student management app\\studentmanagement\\studentmanagement.domain\\entities\\student\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{131891EE-30AC-EB1D-31CE-AD700BBB9546}|StudentManagement.Domain\\StudentSkillManagement.Domain.csproj|solutionrelative:studentmanagement.domain\\entities\\student\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CFB0350E-31D4-8F7C-740A-D35B4640A9D0}|StudentManagement.Application\\StudentSkillManagement.Application.csproj|c:\\iti\\studentmanagementapp\\studentmnagementapp\\studentmanagement.application\\features\\students\\commands\\updatestudentprofile\\updatestudentprofilecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CFB0350E-31D4-8F7C-740A-D35B4640A9D0}|StudentManagement.Application\\StudentSkillManagement.Application.csproj|solutionrelative:studentmanagement.application\\features\\students\\commands\\updatestudentprofile\\updatestudentprofilecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3217ABD9-27DB-7014-082C-A392FB643C26}|StudentManagement.Application\\StudentSkillManagement.Application.csproj|f:\\iti\\student management app\\studentmanagement\\studentmanagement.application\\abstractions\\persistence\\istudentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3217ABD9-27DB-7014-082C-A392FB643C26}|StudentManagement.Application\\StudentSkillManagement.Application.csproj|solutionrelative:studentmanagement.application\\abstractions\\persistence\\istudentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CFB0350E-31D4-8F7C-740A-D35B4640A9D0}|StudentManagement.Application\\StudentSkillManagement.Application.csproj|c:\\iti\\studentmanagementapp\\studentmnagementapp\\studentmanagement.application\\features\\students\\commands\\updatestudentprofile\\updatestudentprofilecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CFB0350E-31D4-8F7C-740A-D35B4640A9D0}|StudentManagement.Application\\StudentSkillManagement.Application.csproj|solutionrelative:studentmanagement.application\\features\\students\\commands\\updatestudentprofile\\updatestudentprofilecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{10B27AFE-906E-DF09-B843-58F0E13D99DF}|StudentManagement.Presentation\\StudentSkillManagement.Presentation.csproj|f:\\iti\\student management app\\studentmanagement\\studentmanagement.presentation\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{10B27AFE-906E-DF09-B843-58F0E13D99DF}|StudentManagement.Presentation\\StudentSkillManagement.Presentation.csproj|solutionrelative:studentmanagement.presentation\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C7009776-F74D-7F28-E973-FB807F8FBBF4}|StudentManagement.Domain\\StudentSkillManagement.Domain.csproj|c:\\iti\\studentmanagementapp\\studentmnagementapp\\studentmanagement.domain\\entities\\student\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7009776-F74D-7F28-E973-FB807F8FBBF4}|StudentManagement.Domain\\StudentSkillManagement.Domain.csproj|solutionrelative:studentmanagement.domain\\entities\\student\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3217ABD9-27DB-7014-082C-A392FB643C26}|StudentManagement.Application\\StudentSkillManagement.Application.csproj|f:\\iti\\student management app\\studentmanagement\\studentmanagement.application\\features\\students\\commands\\createstudent\\createstudentcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3217ABD9-27DB-7014-082C-A392FB643C26}|StudentManagement.Application\\StudentSkillManagement.Application.csproj|solutionrelative:studentmanagement.application\\features\\students\\commands\\createstudent\\createstudentcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CFB0350E-31D4-8F7C-740A-D35B4640A9D0}|StudentManagement.Application\\StudentSkillManagement.Application.csproj|c:\\iti\\studentmanagementapp\\studentmnagementapp\\studentmanagement.application\\features\\students\\commands\\createstudent\\createstudentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CFB0350E-31D4-8F7C-740A-D35B4640A9D0}|StudentManagement.Application\\StudentSkillManagement.Application.csproj|solutionrelative:studentmanagement.application\\features\\students\\commands\\createstudent\\createstudentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{10B27AFE-906E-DF09-B843-58F0E13D99DF}|StudentManagement.Presentation\\StudentSkillManagement.Presentation.csproj|f:\\iti\\student management app\\studentmanagement\\studentmanagement.presentation\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{10B27AFE-906E-DF09-B843-58F0E13D99DF}|StudentManagement.Presentation\\StudentSkillManagement.Presentation.csproj|solutionrelative:studentmanagement.presentation\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{2FD2E085-7881-2411-6A59-287CEDB3D743}|StudentManagement.Presentation\\StudentSkillManagement.Presentation.csproj|c:\\iti\\studentmanagementapp\\studentmnagementapp\\studentmanagement.presentation\\contracts\\students\\updatestudentprofilerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FD2E085-7881-2411-6A59-287CEDB3D743}|StudentManagement.Presentation\\StudentSkillManagement.Presentation.csproj|solutionrelative:studentmanagement.presentation\\contracts\\students\\updatestudentprofilerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{10B27AFE-906E-DF09-B843-58F0E13D99DF}|StudentManagement.Presentation\\StudentSkillManagement.Presentation.csproj|f:\\iti\\student management app\\studentmanagement\\studentmanagement.presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{10B27AFE-906E-DF09-B843-58F0E13D99DF}|StudentManagement.Presentation\\StudentSkillManagement.Presentation.csproj|solutionrelative:studentmanagement.presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2FD2E085-7881-2411-6A59-287CEDB3D743}|StudentManagement.Presentation\\StudentSkillManagement.Presentation.csproj|c:\\iti\\studentmanagementapp\\studentmnagementapp\\studentmanagement.presentation\\contracts\\students\\createstudentrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FD2E085-7881-2411-6A59-287CEDB3D743}|StudentManagement.Presentation\\StudentSkillManagement.Presentation.csproj|solutionrelative:studentmanagement.presentation\\contracts\\students\\createstudentrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3217ABD9-27DB-7014-082C-A392FB643C26}|StudentManagement.Application\\StudentSkillManagement.Application.csproj|f:\\iti\\student management app\\studentmanagement\\studentmanagement.application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3217ABD9-27DB-7014-082C-A392FB643C26}|StudentManagement.Application\\StudentSkillManagement.Application.csproj|solutionrelative:studentmanagement.application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CFB0350E-31D4-8F7C-740A-D35B4640A9D0}|StudentManagement.Application\\StudentSkillManagement.Application.csproj|c:\\iti\\studentmanagementapp\\studentmnagementapp\\studentmanagement.application\\studentskillmanagement.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{CFB0350E-31D4-8F7C-740A-D35B4640A9D0}|StudentManagement.Application\\StudentSkillManagement.Application.csproj|solutionrelative:studentmanagement.application\\studentskillmanagement.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F054E8AB-B9FE-8874-BB90-4A476A4738D0}|StudentManagement.Infrastructure\\StudentSkillManagement.Infrastructure.csproj|f:\\iti\\student management app\\studentmanagement\\studentmanagement.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F054E8AB-B9FE-8874-BB90-4A476A4738D0}|StudentManagement.Infrastructure\\StudentSkillManagement.Infrastructure.csproj|solutionrelative:studentmanagement.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{88114E86-A89A-98C2-6D06-8E624D69AEBD}|StudentManagement.Infrastructure\\StudentSkillManagement.Infrastructure.csproj|c:\\iti\\studentmanagementapp\\studentmnagementapp\\studentmanagement.infrastructure\\repositories\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88114E86-A89A-98C2-6D06-8E624D69AEBD}|StudentManagement.Infrastructure\\StudentSkillManagement.Infrastructure.csproj|solutionrelative:studentmanagement.infrastructure\\repositories\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F054E8AB-B9FE-8874-BB90-4A476A4738D0}|StudentManagement.Infrastructure\\StudentSkillManagement.Infrastructure.csproj|f:\\iti\\student management app\\studentmanagement\\studentmanagement.infrastructure\\persistence\\migrations\\20261031164738_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F054E8AB-B9FE-8874-BB90-4A476A4738D0}|StudentManagement.Infrastructure\\StudentSkillManagement.Infrastructure.csproj|solutionrelative:studentmanagement.infrastructure\\persistence\\migrations\\20261031164738_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CFB0350E-31D4-8F7C-740A-D35B4640A9D0}|StudentManagement.Application\\StudentSkillManagement.Application.csproj|c:\\iti\\studentmanagementapp\\studentmnagementapp\\studentmanagement.application\\abstractions\\persistence\\istudentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CFB0350E-31D4-8F7C-740A-D35B4640A9D0}|StudentManagement.Application\\StudentSkillManagement.Application.csproj|solutionrelative:studentmanagement.application\\abstractions\\persistence\\istudentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F054E8AB-B9FE-8874-BB90-4A476A4738D0}|StudentManagement.Infrastructure\\StudentSkillManagement.Infrastructure.csproj|f:\\iti\\student management app\\studentmanagement\\studentmanagement.infrastructure\\persistence\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F054E8AB-B9FE-8874-BB90-4A476A4738D0}|StudentManagement.Infrastructure\\StudentSkillManagement.Infrastructure.csproj|solutionrelative:studentmanagement.infrastructure\\persistence\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CFB0350E-31D4-8F7C-740A-D35B4640A9D0}|StudentManagement.Application\\StudentSkillManagement.Application.csproj|c:\\iti\\studentmanagementapp\\studentmnagementapp\\studentmanagement.application\\features\\students\\commands\\createstudent\\createstudentcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CFB0350E-31D4-8F7C-740A-D35B4640A9D0}|StudentManagement.Application\\StudentSkillManagement.Application.csproj|solutionrelative:studentmanagement.application\\features\\students\\commands\\createstudent\\createstudentcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F054E8AB-B9FE-8874-BB90-4A476A4738D0}|StudentManagement.Infrastructure\\StudentSkillManagement.Infrastructure.csproj|f:\\iti\\student management app\\studentmanagement\\studentmanagement.infrastructure\\persistence\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F054E8AB-B9FE-8874-BB90-4A476A4738D0}|StudentManagement.Infrastructure\\StudentSkillManagement.Infrastructure.csproj|solutionrelative:studentmanagement.infrastructure\\persistence\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2FD2E085-7881-2411-6A59-287CEDB3D743}|StudentManagement.Presentation\\StudentSkillManagement.Presentation.csproj|c:\\iti\\studentmanagementapp\\studentmnagementapp\\studentmanagement.presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FD2E085-7881-2411-6A59-287CEDB3D743}|StudentManagement.Presentation\\StudentSkillManagement.Presentation.csproj|solutionrelative:studentmanagement.presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{131891EE-30AC-EB1D-31CE-AD700BBB9546}|StudentManagement.Domain\\StudentSkillManagement.Domain.csproj|f:\\iti\\student management app\\studentmanagement\\studentmanagement.domain\\entities\\skill\\skill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{131891EE-30AC-EB1D-31CE-AD700BBB9546}|StudentManagement.Domain\\StudentSkillManagement.Domain.csproj|solutionrelative:studentmanagement.domain\\entities\\skill\\skill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CFB0350E-31D4-8F7C-740A-D35B4640A9D0}|StudentManagement.Application\\StudentSkillManagement.Application.csproj|c:\\iti\\studentmanagementapp\\studentmnagementapp\\studentmanagement.application\\features\\students\\queries\\getstudentbyid\\getstudentbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CFB0350E-31D4-8F7C-740A-D35B4640A9D0}|StudentManagement.Application\\StudentSkillManagement.Application.csproj|solutionrelative:studentmanagement.application\\features\\students\\queries\\getstudentbyid\\getstudentbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{131891EE-30AC-EB1D-31CE-AD700BBB9546}|StudentManagement.Domain\\StudentSkillManagement.Domain.csproj|f:\\iti\\student management app\\studentmanagement\\studentmanagement.domain\\entities\\studentskill\\studentskill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{131891EE-30AC-EB1D-31CE-AD700BBB9546}|StudentManagement.Domain\\StudentSkillManagement.Domain.csproj|solutionrelative:studentmanagement.domain\\entities\\studentskill\\studentskill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CFB0350E-31D4-8F7C-740A-D35B4640A9D0}|StudentManagement.Application\\StudentSkillManagement.Application.csproj|c:\\iti\\studentmanagementapp\\studentmnagementapp\\studentmanagement.application\\features\\students\\queries\\getallstudents\\getallstudentsqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CFB0350E-31D4-8F7C-740A-D35B4640A9D0}|StudentManagement.Application\\StudentSkillManagement.Application.csproj|solutionrelative:studentmanagement.application\\features\\students\\queries\\getallstudents\\getallstudentsqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Infrastructure\\Persistence\\Migrations\\20261031140437_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:StudentManagement.Infrastructure\\Persistence\\Migrations\\20261031140437_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CFB0350E-31D4-8F7C-740A-D35B4640A9D0}|StudentManagement.Application\\StudentSkillManagement.Application.csproj|c:\\iti\\studentmanagementapp\\studentmnagementapp\\studentmanagement.application\\features\\students\\queries\\getallstudents\\getallstudentsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CFB0350E-31D4-8F7C-740A-D35B4640A9D0}|StudentManagement.Application\\StudentSkillManagement.Application.csproj|solutionrelative:studentmanagement.application\\features\\students\\queries\\getallstudents\\getallstudentsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{10B27AFE-906E-DF09-B843-58F0E13D99DF}|StudentManagement.Presentation\\StudentSkillManagement.Presentation.csproj|f:\\iti\\student management app\\studentmanagement\\studentmanagement.presentation\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{10B27AFE-906E-DF09-B843-58F0E13D99DF}|StudentManagement.Presentation\\StudentSkillManagement.Presentation.csproj|solutionrelative:studentmanagement.presentation\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{CFB0350E-31D4-8F7C-740A-D35B4640A9D0}|StudentManagement.Application\\StudentSkillManagement.Application.csproj|c:\\iti\\studentmanagementapp\\studentmnagementapp\\studentmanagement.application\\features\\students\\queries\\getstudentbyid\\studentdetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CFB0350E-31D4-8F7C-740A-D35B4640A9D0}|StudentManagement.Application\\StudentSkillManagement.Application.csproj|solutionrelative:studentmanagement.application\\features\\students\\queries\\getstudentbyid\\studentdetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3217ABD9-27DB-7014-082C-A392FB643C26}|StudentManagement.Application\\StudentSkillManagement.Application.csproj|f:\\iti\\student management app\\studentmanagement\\studentmanagement.application\\features\\students\\commands\\createstudent\\createstudentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3217ABD9-27DB-7014-082C-A392FB643C26}|StudentManagement.Application\\StudentSkillManagement.Application.csproj|solutionrelative:studentmanagement.application\\features\\students\\commands\\createstudent\\createstudentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CFB0350E-31D4-8F7C-740A-D35B4640A9D0}|StudentManagement.Application\\StudentSkillManagement.Application.csproj|c:\\iti\\studentmanagementapp\\studentmnagementapp\\studentmanagement.application\\features\\students\\queries\\getstudentbyid\\getstudentbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CFB0350E-31D4-8F7C-740A-D35B4640A9D0}|StudentManagement.Application\\StudentSkillManagement.Application.csproj|solutionrelative:studentmanagement.application\\features\\students\\queries\\getstudentbyid\\getstudentbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{131891EE-30AC-EB1D-31CE-AD700BBB9546}|StudentManagement.Domain\\StudentSkillManagement.Domain.csproj|f:\\iti\\student management app\\studentmanagement\\studentmanagement.domain\\entities\\studentskill\\proficiencylevel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{131891EE-30AC-EB1D-31CE-AD700BBB9546}|StudentManagement.Domain\\StudentSkillManagement.Domain.csproj|solutionrelative:studentmanagement.domain\\entities\\studentskill\\proficiencylevel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Infrastructure\\Persistence\\Migrations\\20261101110105_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:StudentManagement.Infrastructure\\Persistence\\Migrations\\20261101110105_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FD2E085-7881-2411-6A59-287CEDB3D743}|StudentManagement.Presentation\\StudentSkillManagement.Presentation.csproj|c:\\iti\\studentmanagementapp\\studentmnagementapp\\studentmanagement.presentation\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2FD2E085-7881-2411-6A59-287CEDB3D743}|StudentManagement.Presentation\\StudentSkillManagement.Presentation.csproj|solutionrelative:studentmanagement.presentation\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Infrastructure\\Persistence\\Migrations\\20261031140437_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FD2E085-7881-2411-6A59-287CEDB3D743}|StudentManagement.Presentation\\StudentSkillManagement.Presentation.csproj|c:\\iti\\studentmanagementapp\\studentmnagementapp\\studentmanagement.presentation\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2FD2E085-7881-2411-6A59-287CEDB3D743}|StudentManagement.Presentation\\StudentSkillManagement.Presentation.csproj|solutionrelative:studentmanagement.presentation\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88114E86-A89A-98C2-6D06-8E624D69AEBD}|StudentManagement.Infrastructure\\StudentSkillManagement.Infrastructure.csproj|c:\\iti\\studentmanagementapp\\studentmnagementapp\\studentmanagement.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88114E86-A89A-98C2-6D06-8E624D69AEBD}|StudentManagement.Infrastructure\\StudentSkillManagement.Infrastructure.csproj|solutionrelative:studentmanagement.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88114E86-A89A-98C2-6D06-8E624D69AEBD}|StudentManagement.Infrastructure\\StudentSkillManagement.Infrastructure.csproj|c:\\iti\\studentmanagementapp\\studentmnagementapp\\studentmanagement.infrastructure\\persistence\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88114E86-A89A-98C2-6D06-8E624D69AEBD}|StudentManagement.Infrastructure\\StudentSkillManagement.Infrastructure.csproj|solutionrelative:studentmanagement.infrastructure\\persistence\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7009776-F74D-7F28-E973-FB807F8FBBF4}|StudentManagement.Domain\\StudentSkillManagement.Domain.csproj|c:\\iti\\studentmanagementapp\\studentmnagementapp\\studentmanagement.domain\\entities\\skill\\skill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7009776-F74D-7F28-E973-FB807F8FBBF4}|StudentManagement.Domain\\StudentSkillManagement.Domain.csproj|solutionrelative:studentmanagement.domain\\entities\\skill\\skill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7009776-F74D-7F28-E973-FB807F8FBBF4}|StudentManagement.Domain\\StudentSkillManagement.Domain.csproj|c:\\iti\\studentmanagementapp\\studentmnagementapp\\studentmanagement.domain\\entities\\studentskill\\studentskill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7009776-F74D-7F28-E973-FB807F8FBBF4}|StudentManagement.Domain\\StudentSkillManagement.Domain.csproj|solutionrelative:studentmanagement.domain\\entities\\studentskill\\studentskill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7009776-F74D-7F28-E973-FB807F8FBBF4}|StudentManagement.Domain\\StudentSkillManagement.Domain.csproj|c:\\iti\\studentmanagementapp\\studentmnagementapp\\studentmanagement.domain\\entities\\studentskill\\proficiencylevel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7009776-F74D-7F28-E973-FB807F8FBBF4}|StudentManagement.Domain\\StudentSkillManagement.Domain.csproj|solutionrelative:studentmanagement.domain\\entities\\studentskill\\proficiencylevel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -98,108 +129,108 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "GetStudentByIdQueryHandler.cs",
-              "DocumentMoniker": "F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Application\\Features\\Students\\Queries\\GetStudentById\\GetStudentByIdQueryHandler.cs",
-              "RelativeDocumentMoniker": "StudentManagement.Application\\Features\\Students\\Queries\\GetStudentById\\GetStudentByIdQueryHandler.cs",
-              "ToolTip": "F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Application\\Features\\Students\\Queries\\GetStudentById\\GetStudentByIdQueryHandler.cs",
-              "RelativeToolTip": "StudentManagement.Application\\Features\\Students\\Queries\\GetStudentById\\GetStudentByIdQueryHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA8AAAAAAAAAA==",
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Application\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "StudentManagement.Application\\DependencyInjection.cs",
+              "ToolTip": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Application\\DependencyInjection.cs",
+              "RelativeToolTip": "StudentManagement.Application\\DependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-31T18:56:47.858Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "StudentDetailsDto.cs",
-              "DocumentMoniker": "F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Application\\Features\\Students\\Queries\\GetStudentById\\StudentDetailsDto.cs",
-              "RelativeDocumentMoniker": "StudentManagement.Application\\Features\\Students\\Queries\\GetStudentById\\StudentDetailsDto.cs",
-              "ToolTip": "F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Application\\Features\\Students\\Queries\\GetStudentById\\StudentDetailsDto.cs",
-              "RelativeToolTip": "StudentManagement.Application\\Features\\Students\\Queries\\GetStudentById\\StudentDetailsDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-31T18:54:26.999Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GetStudentByIdQuery.cs",
-              "DocumentMoniker": "F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Application\\Features\\Students\\Queries\\GetStudentById\\GetStudentByIdQuery.cs",
-              "RelativeDocumentMoniker": "StudentManagement.Application\\Features\\Students\\Queries\\GetStudentById\\GetStudentByIdQuery.cs",
-              "ToolTip": "F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Application\\Features\\Students\\Queries\\GetStudentById\\GetStudentByIdQuery.cs",
-              "RelativeToolTip": "StudentManagement.Application\\Features\\Students\\Queries\\GetStudentById\\GetStudentByIdQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-31T18:52:49.756Z",
+              "WhenOpened": "2026-11-02T16:17:28.503Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "CreateStudentRequest.cs",
-              "DocumentMoniker": "F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Presentation\\Contracts\\Students\\CreateStudentRequest.cs",
-              "RelativeDocumentMoniker": "StudentManagement.Presentation\\Contracts\\Students\\CreateStudentRequest.cs",
-              "ToolTip": "F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Presentation\\Contracts\\Students\\CreateStudentRequest.cs",
-              "RelativeToolTip": "StudentManagement.Presentation\\Contracts\\Students\\CreateStudentRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAGAAAAAAAAAA==",
+              "Title": "ChangeStudentStatusCommandHandler.cs",
+              "DocumentMoniker": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Application\\Features\\Students\\Commands\\ChangeStudentStatus\\ChangeStudentStatusCommandHandler.cs",
+              "RelativeDocumentMoniker": "StudentManagement.Application\\Features\\Students\\Commands\\ChangeStudentStatus\\ChangeStudentStatusCommandHandler.cs",
+              "ToolTip": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Application\\Features\\Students\\Commands\\ChangeStudentStatus\\ChangeStudentStatusCommandHandler.cs",
+              "RelativeToolTip": "StudentManagement.Application\\Features\\Students\\Commands\\ChangeStudentStatus\\ChangeStudentStatusCommandHandler.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBIAAABYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-31T17:49:30.548Z",
+              "WhenOpened": "2026-11-02T15:58:35.186Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "StudentRepository.cs",
-              "DocumentMoniker": "F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Infrastructure\\Repositories\\StudentRepository.cs",
-              "RelativeDocumentMoniker": "StudentManagement.Infrastructure\\Repositories\\StudentRepository.cs",
-              "ToolTip": "F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Infrastructure\\Repositories\\StudentRepository.cs",
-              "RelativeToolTip": "StudentManagement.Infrastructure\\Repositories\\StudentRepository.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAkwDUAAAATAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "ChangeStudentStatusCommand.cs",
+              "DocumentMoniker": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Application\\Features\\Students\\Commands\\ChangeStudentStatus\\ChangeStudentStatusCommand.cs",
+              "RelativeDocumentMoniker": "StudentManagement.Application\\Features\\Students\\Commands\\ChangeStudentStatus\\ChangeStudentStatusCommand.cs",
+              "ToolTip": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Application\\Features\\Students\\Commands\\ChangeStudentStatus\\ChangeStudentStatusCommand.cs",
+              "RelativeToolTip": "StudentManagement.Application\\Features\\Students\\Commands\\ChangeStudentStatus\\ChangeStudentStatusCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-31T12:03:25.726Z",
+              "WhenOpened": "2026-11-02T15:57:14.817Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "StudentsController.cs",
-              "DocumentMoniker": "F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Presentation\\Controllers\\StudentsController.cs",
+              "DocumentMoniker": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Presentation\\Controllers\\StudentsController.cs",
               "RelativeDocumentMoniker": "StudentManagement.Presentation\\Controllers\\StudentsController.cs",
-              "ToolTip": "F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Presentation\\Controllers\\StudentsController.cs",
+              "ToolTip": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Presentation\\Controllers\\StudentsController.cs",
               "RelativeToolTip": "StudentManagement.Presentation\\Controllers\\StudentsController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAuwCAAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAADwAAAAAAAAAAIAwwFgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-31T17:10:04.44Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IStudentRepository.cs",
-              "DocumentMoniker": "F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Application\\Abstractions\\Persistence\\IStudentRepository.cs",
-              "RelativeDocumentMoniker": "StudentManagement.Application\\Abstractions\\Persistence\\IStudentRepository.cs",
-              "ToolTip": "F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Application\\Abstractions\\Persistence\\IStudentRepository.cs",
-              "RelativeToolTip": "StudentManagement.Application\\Abstractions\\Persistence\\IStudentRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAnAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "ChangeStatusRequest.cs",
+              "DocumentMoniker": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Presentation\\Contracts\\Students\\ChangeStatusRequest.cs",
+              "RelativeDocumentMoniker": "StudentManagement.Presentation\\Contracts\\Students\\ChangeStatusRequest.cs",
+              "ToolTip": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Presentation\\Contracts\\Students\\ChangeStatusRequest.cs",
+              "RelativeToolTip": "StudentManagement.Presentation\\Contracts\\Students\\ChangeStatusRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-31T11:38:48.101Z",
+              "WhenOpened": "2026-11-02T16:07:30.483Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "UpdateStudentProfileCommandHandler.cs",
+              "DocumentMoniker": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Application\\Features\\Students\\Commands\\UpdateStudentProfile\\UpdateStudentProfileCommandHandler.cs",
+              "RelativeDocumentMoniker": "StudentManagement.Application\\Features\\Students\\Commands\\UpdateStudentProfile\\UpdateStudentProfileCommandHandler.cs",
+              "ToolTip": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Application\\Features\\Students\\Commands\\UpdateStudentProfile\\UpdateStudentProfileCommandHandler.cs",
+              "RelativeToolTip": "StudentManagement.Application\\Features\\Students\\Commands\\UpdateStudentProfile\\UpdateStudentProfileCommandHandler.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAvwBYAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-02T13:31:50.274Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UpdateStudentProfileCommand.cs",
+              "DocumentMoniker": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Application\\Features\\Students\\Commands\\UpdateStudentProfile\\UpdateStudentProfileCommand.cs",
+              "RelativeDocumentMoniker": "StudentManagement.Application\\Features\\Students\\Commands\\UpdateStudentProfile\\UpdateStudentProfileCommand.cs",
+              "ToolTip": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Application\\Features\\Students\\Commands\\UpdateStudentProfile\\UpdateStudentProfileCommand.cs",
+              "RelativeToolTip": "StudentManagement.Application\\Features\\Students\\Commands\\UpdateStudentProfile\\UpdateStudentProfileCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAYAAABtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-02T13:28:49.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Student.cs",
-              "DocumentMoniker": "F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Domain\\Entities\\Student\\Student.cs",
+              "DocumentMoniker": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Domain\\Entities\\Student\\Student.cs",
               "RelativeDocumentMoniker": "StudentManagement.Domain\\Entities\\Student\\Student.cs",
-              "ToolTip": "F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Domain\\Entities\\Student\\Student.cs",
+              "ToolTip": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Domain\\Entities\\Student\\Student.cs",
               "RelativeToolTip": "StudentManagement.Domain\\Entities\\Student\\Student.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAAwDAAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAACgAAAAAAAAAAAAzwEAAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-31T11:33:56.821Z",
               "EditorCaption": ""
@@ -207,166 +238,23 @@
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Presentation\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "StudentManagement.Presentation\\Properties\\launchSettings.json",
-              "ToolTip": "F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Presentation\\Properties\\launchSettings.json",
-              "RelativeToolTip": "StudentManagement.Presentation\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-10-31T17:55:29.264Z",
+              "Title": "UpdateStudentProfileRequest.cs",
+              "DocumentMoniker": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Presentation\\Contracts\\Students\\UpdateStudentProfileRequest.cs",
+              "RelativeDocumentMoniker": "StudentManagement.Presentation\\Contracts\\Students\\UpdateStudentProfileRequest.cs",
+              "ToolTip": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Presentation\\Contracts\\Students\\UpdateStudentProfileRequest.cs",
+              "RelativeToolTip": "StudentManagement.Presentation\\Contracts\\Students\\UpdateStudentProfileRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-02T13:50:09.192Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "CreateStudentCommandHandler.cs",
-              "DocumentMoniker": "F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Application\\Features\\Students\\Commands\\CreateStudent\\CreateStudentCommandHandler.cs",
-              "RelativeDocumentMoniker": "StudentManagement.Application\\Features\\Students\\Commands\\CreateStudent\\CreateStudentCommandHandler.cs",
-              "ToolTip": "F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Application\\Features\\Students\\Commands\\CreateStudent\\CreateStudentCommandHandler.cs",
-              "RelativeToolTip": "StudentManagement.Application\\Features\\Students\\Commands\\CreateStudent\\CreateStudentCommandHandler.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBIAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-31T11:27:08.107Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Program.cs",
-              "DocumentMoniker": "F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Presentation\\Program.cs",
-              "RelativeDocumentMoniker": "StudentManagement.Presentation\\Program.cs",
-              "ToolTip": "F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Presentation\\Program.cs",
-              "RelativeToolTip": "StudentManagement.Presentation\\Program.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-31T13:31:05.102Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "DependencyInjection.cs",
-              "DocumentMoniker": "F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Application\\DependencyInjection.cs",
-              "RelativeDocumentMoniker": "StudentManagement.Application\\DependencyInjection.cs",
-              "ToolTip": "F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Application\\DependencyInjection.cs",
-              "RelativeToolTip": "StudentManagement.Application\\DependencyInjection.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-31T17:00:45.626Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "DependencyInjection.cs",
-              "DocumentMoniker": "F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Infrastructure\\DependencyInjection.cs",
-              "RelativeDocumentMoniker": "StudentManagement.Infrastructure\\DependencyInjection.cs",
-              "ToolTip": "F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Infrastructure\\DependencyInjection.cs",
-              "RelativeToolTip": "StudentManagement.Infrastructure\\DependencyInjection.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-31T13:24:57.511Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "20261031164738_InitialCreate.cs",
-              "DocumentMoniker": "F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Infrastructure\\Persistence\\Migrations\\20261031164738_InitialCreate.cs",
-              "RelativeDocumentMoniker": "StudentManagement.Infrastructure\\Persistence\\Migrations\\20261031164738_InitialCreate.cs",
-              "ToolTip": "F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Infrastructure\\Persistence\\Migrations\\20261031164738_InitialCreate.cs",
-              "RelativeToolTip": "StudentManagement.Infrastructure\\Persistence\\Migrations\\20261031164738_InitialCreate.cs",
-              "ViewState": "AgIAADoAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-31T16:47:38.601Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ApplicationDbContextModelSnapshot.cs",
-              "DocumentMoniker": "F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Infrastructure\\Persistence\\Migrations\\ApplicationDbContextModelSnapshot.cs",
-              "RelativeDocumentMoniker": "StudentManagement.Infrastructure\\Persistence\\Migrations\\ApplicationDbContextModelSnapshot.cs",
-              "ToolTip": "F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Infrastructure\\Persistence\\Migrations\\ApplicationDbContextModelSnapshot.cs",
-              "RelativeToolTip": "StudentManagement.Infrastructure\\Persistence\\Migrations\\ApplicationDbContextModelSnapshot.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-31T16:47:42.954Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Infrastructure\\Persistence\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "StudentManagement.Infrastructure\\Persistence\\ApplicationDbContext.cs",
-              "ToolTip": "F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Infrastructure\\Persistence\\ApplicationDbContext.cs",
-              "RelativeToolTip": "StudentManagement.Infrastructure\\Persistence\\ApplicationDbContext.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAgwD4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-31T13:22:00.839Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Skill.cs",
-              "DocumentMoniker": "F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Domain\\Entities\\Skill\\Skill.cs",
-              "RelativeDocumentMoniker": "StudentManagement.Domain\\Entities\\Skill\\Skill.cs",
-              "ToolTip": "F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Domain\\Entities\\Skill\\Skill.cs",
-              "RelativeToolTip": "StudentManagement.Domain\\Entities\\Skill\\Skill.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAwwBQAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-31T16:32:49.879Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "StudentSkill.cs",
-              "DocumentMoniker": "F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Domain\\Entities\\StudentSkill\\StudentSkill.cs",
-              "RelativeDocumentMoniker": "StudentManagement.Domain\\Entities\\StudentSkill\\StudentSkill.cs",
-              "ToolTip": "F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Domain\\Entities\\StudentSkill\\StudentSkill.cs",
-              "RelativeToolTip": "StudentManagement.Domain\\Entities\\StudentSkill\\StudentSkill.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAADwvw4AAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-31T11:59:19.399Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "20261031140437_InitialCreate.cs",
-              "DocumentMoniker": "F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Infrastructure\\Persistence\\Migrations\\20261031140437_InitialCreate.cs",
-              "RelativeDocumentMoniker": "StudentManagement.Infrastructure\\Persistence\\Migrations\\20261031140437_InitialCreate.cs",
-              "ToolTip": "F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Infrastructure\\Persistence\\Migrations\\20261031140437_InitialCreate.cs",
-              "RelativeToolTip": "StudentManagement.Infrastructure\\Persistence\\Migrations\\20261031140437_InitialCreate.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-31T14:04:38.145Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Presentation\\appsettings.json",
-              "RelativeDocumentMoniker": "StudentManagement.Presentation\\appsettings.json",
-              "ToolTip": "F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Presentation\\appsettings.json",
-              "RelativeToolTip": "StudentManagement.Presentation\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-10-31T13:30:23.449Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
               "Title": "CreateStudentCommand.cs",
-              "DocumentMoniker": "F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Application\\Features\\Students\\Commands\\CreateStudent\\CreateStudentCommand.cs",
+              "DocumentMoniker": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Application\\Features\\Students\\Commands\\CreateStudent\\CreateStudentCommand.cs",
               "RelativeDocumentMoniker": "StudentManagement.Application\\Features\\Students\\Commands\\CreateStudent\\CreateStudentCommand.cs",
-              "ToolTip": "F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Application\\Features\\Students\\Commands\\CreateStudent\\CreateStudentCommand.cs",
+              "ToolTip": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Application\\Features\\Students\\Commands\\CreateStudent\\CreateStudentCommand.cs",
               "RelativeToolTip": "StudentManagement.Application\\Features\\Students\\Commands\\CreateStudent\\CreateStudentCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -375,16 +263,258 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CreateStudentRequest.cs",
+              "DocumentMoniker": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Presentation\\Contracts\\Students\\CreateStudentRequest.cs",
+              "RelativeDocumentMoniker": "StudentManagement.Presentation\\Contracts\\Students\\CreateStudentRequest.cs",
+              "ToolTip": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Presentation\\Contracts\\Students\\CreateStudentRequest.cs",
+              "RelativeToolTip": "StudentManagement.Presentation\\Contracts\\Students\\CreateStudentRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-02T13:50:48.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "StudentSkillManagement.Application",
+              "DocumentMoniker": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Application\\StudentSkillManagement.Application.csproj",
+              "RelativeDocumentMoniker": "StudentManagement.Application\\StudentSkillManagement.Application.csproj",
+              "ToolTip": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Application\\StudentSkillManagement.Application.csproj",
+              "RelativeToolTip": "StudentManagement.Application\\StudentSkillManagement.Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-11-02T13:49:14.375Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "StudentRepository.cs",
+              "DocumentMoniker": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Infrastructure\\Repositories\\StudentRepository.cs",
+              "RelativeDocumentMoniker": "StudentManagement.Infrastructure\\Repositories\\StudentRepository.cs",
+              "ToolTip": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Infrastructure\\Repositories\\StudentRepository.cs",
+              "RelativeToolTip": "StudentManagement.Infrastructure\\Repositories\\StudentRepository.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAcwD8AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T12:03:25.726Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IStudentRepository.cs",
+              "DocumentMoniker": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Application\\Abstractions\\Persistence\\IStudentRepository.cs",
+              "RelativeDocumentMoniker": "StudentManagement.Application\\Abstractions\\Persistence\\IStudentRepository.cs",
+              "ToolTip": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Application\\Abstractions\\Persistence\\IStudentRepository.cs",
+              "RelativeToolTip": "StudentManagement.Application\\Abstractions\\Persistence\\IStudentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T11:38:48.101Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CreateStudentCommandHandler.cs",
+              "DocumentMoniker": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Application\\Features\\Students\\Commands\\CreateStudent\\CreateStudentCommandHandler.cs",
+              "RelativeDocumentMoniker": "StudentManagement.Application\\Features\\Students\\Commands\\CreateStudent\\CreateStudentCommandHandler.cs",
+              "ToolTip": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Application\\Features\\Students\\Commands\\CreateStudent\\CreateStudentCommandHandler.cs",
+              "RelativeToolTip": "StudentManagement.Application\\Features\\Students\\Commands\\CreateStudent\\CreateStudentCommandHandler.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T11:27:08.107Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "GetAllStudentsQuery.cs",
+              "DocumentMoniker": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Application\\Features\\Students\\Queries\\GetAllStudents\\GetAllStudentsQuery.cs",
+              "RelativeDocumentMoniker": "StudentManagement.Application\\Features\\Students\\Queries\\GetAllStudents\\GetAllStudentsQuery.cs",
+              "ToolTip": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Application\\Features\\Students\\Queries\\GetAllStudents\\GetAllStudentsQuery.cs",
+              "RelativeToolTip": "StudentManagement.Application\\Features\\Students\\Queries\\GetAllStudents\\GetAllStudentsQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T11:24:29.622Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "GetStudentByIdQueryHandler.cs",
+              "DocumentMoniker": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Application\\Features\\Students\\Queries\\GetStudentById\\GetStudentByIdQueryHandler.cs",
+              "RelativeDocumentMoniker": "StudentManagement.Application\\Features\\Students\\Queries\\GetStudentById\\GetStudentByIdQueryHandler.cs",
+              "ToolTip": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Application\\Features\\Students\\Queries\\GetStudentById\\GetStudentByIdQueryHandler.cs",
+              "RelativeToolTip": "StudentManagement.Application\\Features\\Students\\Queries\\GetStudentById\\GetStudentByIdQueryHandler.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA3wCAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T18:56:47.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Presentation\\Program.cs",
+              "RelativeDocumentMoniker": "StudentManagement.Presentation\\Program.cs",
+              "ToolTip": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Presentation\\Program.cs",
+              "RelativeToolTip": "StudentManagement.Presentation\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T13:31:05.102Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "GetAllStudentsQueryHandler.cs",
+              "DocumentMoniker": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Application\\Features\\Students\\Queries\\GetAllStudents\\GetAllStudentsQueryHandler.cs",
+              "RelativeDocumentMoniker": "StudentManagement.Application\\Features\\Students\\Queries\\GetAllStudents\\GetAllStudentsQueryHandler.cs",
+              "ToolTip": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Application\\Features\\Students\\Queries\\GetAllStudents\\GetAllStudentsQueryHandler.cs",
+              "RelativeToolTip": "StudentManagement.Application\\Features\\Students\\Queries\\GetAllStudents\\GetAllStudentsQueryHandler.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAqwAgAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T11:25:36.207Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "StudentDetailsDto.cs",
+              "DocumentMoniker": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Application\\Features\\Students\\Queries\\GetStudentById\\StudentDetailsDto.cs",
+              "RelativeDocumentMoniker": "StudentManagement.Application\\Features\\Students\\Queries\\GetStudentById\\StudentDetailsDto.cs",
+              "ToolTip": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Application\\Features\\Students\\Queries\\GetStudentById\\StudentDetailsDto.cs",
+              "RelativeToolTip": "StudentManagement.Application\\Features\\Students\\Queries\\GetStudentById\\StudentDetailsDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAYAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T18:54:26.999Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "GetStudentByIdQuery.cs",
+              "DocumentMoniker": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Application\\Features\\Students\\Queries\\GetStudentById\\GetStudentByIdQuery.cs",
+              "RelativeDocumentMoniker": "StudentManagement.Application\\Features\\Students\\Queries\\GetStudentById\\GetStudentByIdQuery.cs",
+              "ToolTip": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Application\\Features\\Students\\Queries\\GetStudentById\\GetStudentByIdQuery.cs",
+              "RelativeToolTip": "StudentManagement.Application\\Features\\Students\\Queries\\GetStudentById\\GetStudentByIdQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T18:52:49.756Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 21,
+              "Title": "20261101110105_InitialCreate.cs",
+              "DocumentMoniker": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Infrastructure\\Persistence\\Migrations\\20261101110105_InitialCreate.cs",
+              "RelativeDocumentMoniker": "StudentManagement.Infrastructure\\Persistence\\Migrations\\20261101110105_InitialCreate.cs",
+              "ToolTip": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Infrastructure\\Persistence\\Migrations\\20261101110105_InitialCreate.cs",
+              "RelativeToolTip": "StudentManagement.Infrastructure\\Persistence\\Migrations\\20261101110105_InitialCreate.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T11:01:08.249Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Presentation\\appsettings.json",
+              "RelativeDocumentMoniker": "StudentManagement.Presentation\\appsettings.json",
+              "ToolTip": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Presentation\\appsettings.json",
+              "RelativeToolTip": "StudentManagement.Presentation\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAACPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-10-31T13:30:23.449Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Presentation\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "StudentManagement.Presentation\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Presentation\\Properties\\launchSettings.json",
+              "RelativeToolTip": "StudentManagement.Presentation\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-10-31T17:55:29.264Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Infrastructure\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "StudentManagement.Infrastructure\\DependencyInjection.cs",
+              "ToolTip": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Infrastructure\\DependencyInjection.cs",
+              "RelativeToolTip": "StudentManagement.Infrastructure\\DependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T13:24:57.511Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Infrastructure\\Persistence\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "StudentManagement.Infrastructure\\Persistence\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Infrastructure\\Persistence\\ApplicationDbContext.cs",
+              "RelativeToolTip": "StudentManagement.Infrastructure\\Persistence\\ApplicationDbContext.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAgwD4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T13:22:00.839Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Skill.cs",
+              "DocumentMoniker": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Domain\\Entities\\Skill\\Skill.cs",
+              "RelativeDocumentMoniker": "StudentManagement.Domain\\Entities\\Skill\\Skill.cs",
+              "ToolTip": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Domain\\Entities\\Skill\\Skill.cs",
+              "RelativeToolTip": "StudentManagement.Domain\\Entities\\Skill\\Skill.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAwwBQAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T16:32:49.879Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "StudentSkill.cs",
+              "DocumentMoniker": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Domain\\Entities\\StudentSkill\\StudentSkill.cs",
+              "RelativeDocumentMoniker": "StudentManagement.Domain\\Entities\\StudentSkill\\StudentSkill.cs",
+              "ToolTip": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Domain\\Entities\\StudentSkill\\StudentSkill.cs",
+              "RelativeToolTip": "StudentManagement.Domain\\Entities\\StudentSkill\\StudentSkill.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAADwvw4AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T11:59:19.399Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "20261031140437_InitialCreate.cs",
+              "DocumentMoniker": "F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Infrastructure\\Persistence\\Migrations\\20261031140437_InitialCreate.cs",
+              "ToolTip": "F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Infrastructure\\Persistence\\Migrations\\20261031140437_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T14:04:38.145Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
               "Title": "ProficiencyLevel.cs",
-              "DocumentMoniker": "F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Domain\\Entities\\StudentSkill\\ProficiencyLevel.cs",
+              "DocumentMoniker": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Domain\\Entities\\StudentSkill\\ProficiencyLevel.cs",
               "RelativeDocumentMoniker": "StudentManagement.Domain\\Entities\\StudentSkill\\ProficiencyLevel.cs",
-              "ToolTip": "F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Domain\\Entities\\StudentSkill\\ProficiencyLevel.cs",
+              "ToolTip": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Domain\\Entities\\StudentSkill\\ProficiencyLevel.cs",
               "RelativeToolTip": "StudentManagement.Domain\\Entities\\StudentSkill\\ProficiencyLevel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-31T11:59:18.524Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-31T11:59:18.524Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }

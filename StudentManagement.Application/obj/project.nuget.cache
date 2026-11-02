@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "v2d9b9pLVGc=",
+  "dgSpecHash": "JN4CESGGdeU=",
   "success": true,
-  "projectFilePath": "F:\\ITI\\Student management app\\StudentManagement\\StudentManagement.Application\\StudentSkillManagement.Application.csproj",
+  "projectFilePath": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Application\\StudentSkillManagement.Application.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\pc\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\10.0.14\\microsoft.extensions.configuration.abstractions.10.0.14.nupkg.sha512",
-    "C:\\Users\\pc\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.14\\microsoft.extensions.dependencyinjection.abstractions.10.0.14.nupkg.sha512",
-    "C:\\Users\\pc\\.nuget\\packages\\microsoft.extensions.primitives\\10.0.14\\microsoft.extensions.primitives.10.0.14.nupkg.sha512"
+    "C:\\Users\\m_haseb\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\10.0.14\\microsoft.extensions.configuration.abstractions.10.0.14.nupkg.sha512",
+    "C:\\Users\\m_haseb\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.14\\microsoft.extensions.dependencyinjection.abstractions.10.0.14.nupkg.sha512",
+    "C:\\Users\\m_haseb\\.nuget\\packages\\microsoft.extensions.primitives\\10.0.14\\microsoft.extensions.primitives.10.0.14.nupkg.sha512"
   ],
   "logs": []
 }
