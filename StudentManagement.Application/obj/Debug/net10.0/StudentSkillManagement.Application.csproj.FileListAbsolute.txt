@@ -14,3 +14,19 @@ F:\ITI\Student management app\StudentManagement\StudentManagement.Application\ob
 F:\ITI\Student management app\StudentManagement\StudentManagement.Application\obj\Debug\net10.0\refint\StudentSkillManagement.Application.dll
 F:\ITI\Student management app\StudentManagement\StudentManagement.Application\obj\Debug\net10.0\StudentSkillManagement.Application.pdb
 F:\ITI\Student management app\StudentManagement\StudentManagement.Application\obj\Debug\net10.0\ref\StudentSkillManagement.Application.dll
+C:\ITI\StudentManagementApp\StudentMnagementApp\StudentManagement.Application\bin\Debug\net10.0\StudentSkillManagement.Application.deps.json
+C:\ITI\StudentManagementApp\StudentMnagementApp\StudentManagement.Application\bin\Debug\net10.0\StudentSkillManagement.Application.dll
+C:\ITI\StudentManagementApp\StudentMnagementApp\StudentManagement.Application\bin\Debug\net10.0\StudentSkillManagement.Application.pdb
+C:\ITI\StudentManagementApp\StudentMnagementApp\StudentManagement.Application\bin\Debug\net10.0\StudentSkillManagement.Domain.dll
+C:\ITI\StudentManagementApp\StudentMnagementApp\StudentManagement.Application\bin\Debug\net10.0\StudentSkillManagement.Domain.pdb
+C:\ITI\StudentManagementApp\StudentMnagementApp\StudentManagement.Application\obj\Debug\net10.0\StudentSkillManagement.Application.csproj.AssemblyReference.cache
+C:\ITI\StudentManagementApp\StudentMnagementApp\StudentManagement.Application\obj\Debug\net10.0\StudentSkillManagement.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\ITI\StudentManagementApp\StudentMnagementApp\StudentManagement.Application\obj\Debug\net10.0\StudentSkillManagement.Application.AssemblyInfoInputs.cache
+C:\ITI\StudentManagementApp\StudentMnagementApp\StudentManagement.Application\obj\Debug\net10.0\StudentSkillManagement.Application.AssemblyInfo.cs
+C:\ITI\StudentManagementApp\StudentMnagementApp\StudentManagement.Application\obj\Debug\net10.0\StudentSkillManagement.Application.csproj.CoreCompileInputs.cache
+C:\ITI\StudentManagementApp\StudentMnagementApp\StudentManagement.Application\obj\Debug\net10.0\StudentSkillManagement.Application.sourcelink.json
+C:\ITI\StudentManagementApp\StudentMnagementApp\StudentManagement.Application\obj\Debug\net10.0\StudentS.1C978630.Up2Date
+C:\ITI\StudentManagementApp\StudentMnagementApp\StudentManagement.Application\obj\Debug\net10.0\StudentSkillManagement.Application.dll
+C:\ITI\StudentManagementApp\StudentMnagementApp\StudentManagement.Application\obj\Debug\net10.0\refint\StudentSkillManagement.Application.dll
+C:\ITI\StudentManagementApp\StudentMnagementApp\StudentManagement.Application\obj\Debug\net10.0\StudentSkillManagement.Application.pdb
+C:\ITI\StudentManagementApp\StudentMnagementApp\StudentManagement.Application\obj\Debug\net10.0\ref\StudentSkillManagement.Application.dll

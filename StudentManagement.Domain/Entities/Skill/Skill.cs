@@ -29,7 +29,7 @@ namespace StudentSkillManagement.Domain.Entities.Skill
         {
             Id = Guid.NewGuid();
 
-            SetName(Name);
+            SetName(name);
             Description = string.IsNullOrWhiteSpace(description)? null : description.Trim();
 
             IsActive = true;

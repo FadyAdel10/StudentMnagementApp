@@ -11,3 +11,16 @@ F:\ITI\Student management app\StudentManagement\StudentManagement.Domain\obj\Deb
 F:\ITI\Student management app\StudentManagement\StudentManagement.Domain\obj\Debug\net10.0\StudentSkillManagement.Domain.pdb
 F:\ITI\Student management app\StudentManagement\StudentManagement.Domain\obj\Debug\net10.0\ref\StudentSkillManagement.Domain.dll
 F:\ITI\Student management app\StudentManagement\StudentManagement.Domain\obj\Debug\net10.0\StudentS.15526FDD.Up2Date
+C:\ITI\StudentManagementApp\StudentMnagementApp\StudentManagement.Domain\bin\Debug\net10.0\StudentSkillManagement.Domain.deps.json
+C:\ITI\StudentManagementApp\StudentMnagementApp\StudentManagement.Domain\bin\Debug\net10.0\StudentSkillManagement.Domain.dll
+C:\ITI\StudentManagementApp\StudentMnagementApp\StudentManagement.Domain\bin\Debug\net10.0\StudentSkillManagement.Domain.pdb
+C:\ITI\StudentManagementApp\StudentMnagementApp\StudentManagement.Domain\obj\Debug\net10.0\StudentSkillManagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\ITI\StudentManagementApp\StudentMnagementApp\StudentManagement.Domain\obj\Debug\net10.0\StudentSkillManagement.Domain.AssemblyInfoInputs.cache
+C:\ITI\StudentManagementApp\StudentMnagementApp\StudentManagement.Domain\obj\Debug\net10.0\StudentSkillManagement.Domain.AssemblyInfo.cs
+C:\ITI\StudentManagementApp\StudentMnagementApp\StudentManagement.Domain\obj\Debug\net10.0\StudentSkillManagement.Domain.csproj.CoreCompileInputs.cache
+C:\ITI\StudentManagementApp\StudentMnagementApp\StudentManagement.Domain\obj\Debug\net10.0\StudentSkillManagement.Domain.sourcelink.json
+C:\ITI\StudentManagementApp\StudentMnagementApp\StudentManagement.Domain\obj\Debug\net10.0\StudentSkillManagement.Domain.dll
+C:\ITI\StudentManagementApp\StudentMnagementApp\StudentManagement.Domain\obj\Debug\net10.0\refint\StudentSkillManagement.Domain.dll
+C:\ITI\StudentManagementApp\StudentMnagementApp\StudentManagement.Domain\obj\Debug\net10.0\StudentSkillManagement.Domain.pdb
+C:\ITI\StudentManagementApp\StudentMnagementApp\StudentManagement.Domain\obj\Debug\net10.0\ref\StudentSkillManagement.Domain.dll
+C:\ITI\StudentManagementApp\StudentMnagementApp\StudentManagement.Domain\obj\Debug\net10.0\StudentS.15526FDD.Up2Date
