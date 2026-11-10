@@ -22,7 +22,7 @@ namespace StudentSkillManagement.Infrastructure
         {
             services.Configure<JwtOptions>(configuration.GetSection(JwtOptions.SectionName));
             services.AddScoped<IJwtTokenService, JwtTokenService>();
-            services.AddScoped<IJwtTokenService, JwtTokenService>();
+            services.AddScoped<IIdentityService, IdentityService>();
 
             var connectionString =
                 configuration.GetConnectionString("DefaultConnection");

@@ -3789,23 +3789,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\fadya\\.nuget\\packages\\": {},
+    "C:\\Users\\m_haseb\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Faculty\\ITI\\Military\\StudentMnagementApp\\StudentManagement.Presentation\\StudentSkillManagement.Presentation.csproj",
+      "projectUniqueName": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Presentation\\StudentSkillManagement.Presentation.csproj",
       "projectName": "StudentSkillManagement.Presentation",
-      "projectPath": "D:\\Faculty\\ITI\\Military\\StudentMnagementApp\\StudentManagement.Presentation\\StudentSkillManagement.Presentation.csproj",
-      "packagesPath": "C:\\Users\\fadya\\.nuget\\packages\\",
-      "outputPath": "D:\\Faculty\\ITI\\Military\\StudentMnagementApp\\StudentManagement.Presentation\\obj\\",
+      "projectPath": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Presentation\\StudentSkillManagement.Presentation.csproj",
+      "packagesPath": "C:\\Users\\m_haseb\\.nuget\\packages\\",
+      "outputPath": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Presentation\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\fadya\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\m_haseb\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3821,11 +3821,11 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
-            "D:\\Faculty\\ITI\\Military\\StudentMnagementApp\\StudentManagement.Application\\StudentSkillManagement.Application.csproj": {
-              "projectPath": "D:\\Faculty\\ITI\\Military\\StudentMnagementApp\\StudentManagement.Application\\StudentSkillManagement.Application.csproj"
+            "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Application\\StudentSkillManagement.Application.csproj": {
+              "projectPath": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Application\\StudentSkillManagement.Application.csproj"
             },
-            "D:\\Faculty\\ITI\\Military\\StudentMnagementApp\\StudentManagement.Infrastructure\\StudentSkillManagement.Infrastructure.csproj": {
-              "projectPath": "D:\\Faculty\\ITI\\Military\\StudentMnagementApp\\StudentManagement.Infrastructure\\StudentSkillManagement.Infrastructure.csproj"
+            "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Infrastructure\\StudentSkillManagement.Infrastructure.csproj": {
+              "projectPath": "C:\\ITI\\StudentManagementApp\\StudentMnagementApp\\StudentManagement.Infrastructure\\StudentSkillManagement.Infrastructure.csproj"
             }
           }
         }
@@ -3840,7 +3840,7 @@
         "auditLevel": "low",
         "auditMode": "all"
       },
-      "SdkAnalysisLevel": "10.0.300"
+      "SdkAnalysisLevel": "10.0.400"
     },
     "frameworks": {
       "net10.0": {
@@ -3889,7 +3889,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.403/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.AspNetCore": "(,10.0.32767]",
           "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",
