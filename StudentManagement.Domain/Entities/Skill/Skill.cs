@@ -37,14 +37,14 @@ namespace StudentSkillManagement.Domain.Entities.Skill
 
         public static Skill Create(
             string Name,
-            string Description)
+            string? Description)
         {
             return new Skill(Name, Description);
         }
 
         public void UpdateSkill(
             string name,
-            string description)
+            string? description)
         {
             EnsureActive();
 

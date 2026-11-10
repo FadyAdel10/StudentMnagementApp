@@ -26,6 +26,22 @@ namespace StudentSkillManagement.Infrastructure.Repositories
             throw new NotImplementedException();
         }
 
+        public async Task<bool> ExistsByNameAsync(string name, CancellationToken cancellationToken = default)
+        {
+            return await _context.Skills
+                .AnyAsync(
+                    skill => skill.Name == name,
+                    cancellationToken);
+        }
+        public async Task<bool> ExistsByNameAsync(string name, Guid excludedSkillId, CancellationToken cancellationToken = default)
+        {
+            return await _context.Skills
+                .AnyAsync(
+                    skill => skill.Name == name &&
+                             skill.Id != excludedSkillId,
+                    cancellationToken);
+        }
+
         async Task<List<Skill>> ISkillRepository.GetAll(CancellationToken cancellationToken)
         {
             return await _context.Skills.ToListAsync<Skill>(cancellationToken);

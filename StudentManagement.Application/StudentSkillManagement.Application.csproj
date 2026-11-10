@@ -15,8 +15,4 @@
     <ProjectReference Include="..\StudentManagement.Domain\StudentSkillManagement.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Features\Skills\Commands\" />
-  </ItemGroup>
-
 </Project>

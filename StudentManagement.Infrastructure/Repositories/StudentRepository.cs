@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using StudentSkillManagement.Application.Abstractions.Persistence;
 using StudentSkillManagement.Domain.Entities.Student;
+using StudentSkillManagement.Domain.Entities.StudentSkill;
 using StudentSkillManagement.Infrastructure.Persistence;
 using System;
 using System.Collections.Generic;
@@ -32,7 +33,7 @@ namespace StudentSkillManagement.Infrastructure.Repositories
             await _context.SaveChangesAsync(cancellationToken);
         }
 
-        public async Task<bool> Delete(Guid id, CancellationToken cancellationToken)
+        public async Task<bool> Delete(Guid id, CancellationToken cancellationToken = default)
         {
             var studentToDelete = await _context.Students.FirstOrDefaultAsync(s => s.Id == id);
             if (studentToDelete == null)
@@ -43,12 +44,24 @@ namespace StudentSkillManagement.Infrastructure.Repositories
             return true;
         }
 
-        public async Task<List<Student>> GetAll(CancellationToken cancellationToken)
+        public async Task<List<Student>> GetAll(string? searchTerm= null, bool? isActive= null, CancellationToken cancellationToken = default)
         {
-            return await _context.Students.ToListAsync<Student>(cancellationToken);
+            var query = _context.Students.AsNoTracking();
+            if(!string.IsNullOrWhiteSpace(searchTerm))
+            {
+                searchTerm = searchTerm.Trim();
+                query = query.Where(s => s.FirstName.Contains(searchTerm) || s.LastName.Contains(searchTerm) ||
+                s.Email.Contains(searchTerm));
+            }
+            if(isActive.HasValue)
+            {
+                query = query.Where(s => s.IsActive == isActive.Value);
+            }
+
+            return await query.ToListAsync(cancellationToken);
         }
 
-        public async Task<Student?> GetById(Guid id, CancellationToken cancellationToken)
+        public async Task<Student?> GetById(Guid id, CancellationToken cancellationToken = default)
         {
             return await _context.Students.FirstOrDefaultAsync(s => s.Id == id, cancellationToken);
         }

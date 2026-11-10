@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StudentSkillManagement.Application.Features.StudentSkills.DTOs;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -9,5 +10,6 @@ namespace StudentSkillManagement.Application.Features.Students.Queries.GetStuden
     string FirstName,
     string LastName,
     string Email,
-    bool IsActive);
+    bool IsActive,
+    List<StudentSkillDetailsDto> Skills);
 }

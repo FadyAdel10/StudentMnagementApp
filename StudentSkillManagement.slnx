@@ -1,6 +1,6 @@
 <Solution>
-  <Project Path="C:/ITI/StudentManagementApp/StudentMnagementApp/StudentManagement.Application/StudentSkillManagement.Application.csproj" />
-  <Project Path="C:/ITI/StudentManagementApp/StudentMnagementApp/StudentManagement.Domain/StudentSkillManagement.Domain.csproj" />
-  <Project Path="C:/ITI/StudentManagementApp/StudentMnagementApp/StudentManagement.Infrastructure/StudentSkillManagement.Infrastructure.csproj" />
-  <Project Path="C:/ITI/StudentManagementApp/StudentMnagementApp/StudentManagement.Presentation/StudentSkillManagement.Presentation.csproj" />
+  <Project Path="D:/Faculty/ITI/Military/StudentMnagementApp/StudentManagement.Application/StudentSkillManagement.Application.csproj" />
+  <Project Path="D:/Faculty/ITI/Military/StudentMnagementApp/StudentManagement.Domain/StudentSkillManagement.Domain.csproj" />
+  <Project Path="D:/Faculty/ITI/Military/StudentMnagementApp/StudentManagement.Infrastructure/StudentSkillManagement.Infrastructure.csproj" />
+  <Project Path="D:/Faculty/ITI/Military/StudentMnagementApp/StudentManagement.Presentation/StudentSkillManagement.Presentation.csproj" />
 </Solution>

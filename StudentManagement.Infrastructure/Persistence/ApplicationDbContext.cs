@@ -1,15 +1,17 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using StudentSkillManagement.Domain.Entities.Skill;
 using StudentSkillManagement.Domain.Entities.Student;
 using StudentSkillManagement.Domain.Entities.StudentSkill;
+using StudentSkillManagement.Infrastructure.Identity;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace StudentSkillManagement.Infrastructure.Persistence
 {
-    // remove applied migraion, add navigation properties if it is best practice
-    public sealed class ApplicationDbContext : DbContext
+    public sealed class ApplicationDbContext : IdentityDbContext<ApplicationUser, IdentityRole<Guid>, Guid>
     {
         public ApplicationDbContext(
             DbContextOptions<ApplicationDbContext> options)

@@ -4,6 +4,6 @@ using System.Text;
 
 namespace StudentSkillManagement.Application.Features.Students.Queries.GetAllStudents
 {
-    public sealed record GetAllStudentsQuery();
+    public sealed record GetAllStudentsQuery(string? SearchTerm = null, bool? IsActive = null);
 
 }

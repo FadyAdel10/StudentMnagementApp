@@ -59,7 +59,7 @@ namespace StudentSkillManagement.Domain.Entities.StudentSkill
             return new StudentSkill(studentId, skillId, proficiency);
         }
 
-        public void UpdateStudentSkill(
+        public void UpdateProficiency(
             ProficiencyLevel proficiency)
         {
             ValidateProficiency(proficiency);
