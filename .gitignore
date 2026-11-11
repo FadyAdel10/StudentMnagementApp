@@ -1,0 +1,19 @@
+# Visual Studio
+.vs/
+
+# Build results
+[Bb]in/
+[Oo]bj/
+
+# Visual Studio user-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# IDE
+.idea/
+.vscode/
+
+# Logs
+*.log
