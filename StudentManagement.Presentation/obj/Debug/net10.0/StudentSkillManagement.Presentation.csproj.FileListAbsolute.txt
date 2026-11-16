@@ -343,7 +343,6 @@ C:\ITI\StudentManagementApp\StudentMnagementApp\StudentManagement.Presentation\o
 C:\ITI\StudentManagementApp\StudentMnagementApp\StudentManagement.Presentation\obj\Debug\net10.0\staticwebassets.development.json
 C:\ITI\StudentManagementApp\StudentMnagementApp\StudentManagement.Presentation\obj\Debug\net10.0\staticwebassets.build.endpoints.json
 C:\ITI\StudentManagementApp\StudentMnagementApp\StudentManagement.Presentation\obj\Debug\net10.0\swae.build.ex.cache
-C:\ITI\StudentManagementApp\StudentMnagementApp\StudentManagement.Presentation\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
 C:\ITI\StudentManagementApp\StudentMnagementApp\StudentManagement.Presentation\obj\Debug\net10.0\StudentS.8F918CE3.Up2Date
 C:\ITI\StudentManagementApp\StudentMnagementApp\StudentManagement.Presentation\obj\Debug\net10.0\StudentSkillManagement.Presentation.dll
 C:\ITI\StudentManagementApp\StudentMnagementApp\StudentManagement.Presentation\obj\Debug\net10.0\refint\StudentSkillManagement.Presentation.dll
@@ -531,3 +530,7 @@ D:\Faculty\ITI\Military\StudentMnagementApp\StudentManagement.Presentation\obj\D
 D:\Faculty\ITI\Military\StudentMnagementApp\StudentManagement.Presentation\bin\Debug\net10.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 D:\Faculty\ITI\Military\StudentMnagementApp\StudentManagement.Presentation\bin\Debug\net10.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 D:\Faculty\ITI\Military\StudentMnagementApp\StudentManagement.Presentation\bin\Debug\net10.0\Microsoft.Bcl.Cryptography.dll
+C:\ITI\StudentManagementApp\StudentMnagementApp\StudentManagement.Presentation\bin\Debug\net10.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\ITI\StudentManagementApp\StudentMnagementApp\StudentManagement.Presentation\bin\Debug\net10.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\ITI\StudentManagementApp\StudentMnagementApp\StudentManagement.Presentation\bin\Debug\net10.0\Microsoft.Bcl.Cryptography.dll
+C:\ITI\StudentManagementApp\StudentMnagementApp\StudentManagement.Presentation\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt

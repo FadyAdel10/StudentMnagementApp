@@ -1,6 +1,10 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using StudentSkillManagement.Application.Abstractions.Persistence;
+using StudentSkillManagement.Application.Features.Authentication.Commands.Login;
+using StudentSkillManagement.Application.Features.Authentication.Commands.Refresh;
+using StudentSkillManagement.Application.Features.Authentication.Commands.Register;
+using StudentSkillManagement.Application.Features.Authentication.Commands.RevokeRefreshToken;
 using StudentSkillManagement.Application.Features.Skills.Commands.ChangeSkillStatus;
 using StudentSkillManagement.Application.Features.Skills.Commands.CreateSkill;
 using StudentSkillManagement.Application.Features.Skills.Commands.UpdateSkill;
@@ -43,6 +47,12 @@ namespace StudentSkillManagement.Application
             services.AddScoped<GetAllStudentSkillsQueryHandler>();
             services.AddScoped<UpdateProficiencyLevelCommandHandler>();
             services.AddScoped<DeleteStudentSkillCommandHandler>();
+
+            services.AddScoped<RegisterCommandHandler>();
+            services.AddScoped<LoginCommandHandler>();
+            services.AddScoped<RefreshCommandHandler>();
+
+            services.AddScoped<RevokeRefreshTokenCommandHandler>();
 
             return services;
         }

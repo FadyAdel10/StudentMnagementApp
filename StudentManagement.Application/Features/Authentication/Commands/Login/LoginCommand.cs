@@ -4,7 +4,5 @@ using System.Text;
 
 namespace StudentSkillManagement.Application.Features.Authentication.Commands.Login
 {
-    internal class LoginCommand
-    {
-    }
+    public sealed record LoginCommand(string Email, string Password);
 }

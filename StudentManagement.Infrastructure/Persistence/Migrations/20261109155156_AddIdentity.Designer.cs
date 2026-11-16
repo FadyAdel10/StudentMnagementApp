@@ -12,7 +12,7 @@ using StudentSkillManagement.Infrastructure.Persistence;
 namespace StudentSkillManagement.Infrastructure.Persistence.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20261109155156_AddIdentity")]
+    [Migration("20261111103239_AddIdentity")]
     partial class AddIdentity
     {
         /// <inheritdoc />

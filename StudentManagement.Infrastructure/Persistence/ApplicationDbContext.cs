@@ -1,9 +1,11 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using StudentSkillManagement.Domain.Entities.RefreshToken;
 using StudentSkillManagement.Domain.Entities.Skill;
 using StudentSkillManagement.Domain.Entities.Student;
 using StudentSkillManagement.Domain.Entities.StudentSkill;
+using StudentSkillManagement.Infrastructure.Authentication;
 using StudentSkillManagement.Infrastructure.Identity;
 using System;
 using System.Collections.Generic;
@@ -64,10 +66,32 @@ namespace StudentSkillManagement.Infrastructure.Persistence
                     .WithMany(s => s.StudentSkills)
                     .HasForeignKey(ss => ss.SkillId);
             });
+
+            // RefreshToken Configuration
+            modelBuilder.Entity<RefreshToken>(entity =>
+            {
+                entity.HasKey(rt => rt.Id);
+
+                entity.Property(rt => rt.TokenHash)
+                    .IsRequired()
+                    .HasMaxLength(64);
+
+                entity.HasIndex(rt => rt.TokenHash)
+                    .IsUnique();
+
+                entity.Property(rt => rt.RowVersion)
+                    .IsRowVersion();
+
+                entity.HasOne<ApplicationUser>()
+                    .WithMany()
+                    .HasForeignKey(rt => rt.UserId)
+                    .OnDelete(DeleteBehavior.Cascade);
+            });
         }
 
         public DbSet<Student> Students => Set<Student>();
         public DbSet<Skill> Skills => Set<Skill>();
         public DbSet<StudentSkill> StudentSkills => Set<StudentSkill>();
+        public DbSet<RefreshToken> RefreshTokens => Set<RefreshToken>();
     }
 }

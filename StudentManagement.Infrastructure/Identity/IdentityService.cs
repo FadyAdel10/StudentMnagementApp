@@ -1,11 +1,10 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using StudentSkillManagement.Application.Abstractions.Authentication;
-using StudentSkillManagement.Infrastructure.Identity;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace StudentSkillManagement.Infrastructure.Authentication
+namespace StudentSkillManagement.Infrastructure.Identity
 {
     public class IdentityService : IIdentityService
     {
@@ -57,6 +56,31 @@ namespace StudentSkillManagement.Infrastructure.Authentication
             }
             var roles = await _userManager.GetRolesAsync(applicationUser);
             return roles;
+        }
+
+        async public Task<Guid?> ValidateCredentialsAsync(string Email, string Password)
+        {
+            var applicationUser = await _userManager.FindByEmailAsync(Email);
+            if(applicationUser == null)
+            {
+                return null;
+            }
+            var result =  await _userManager.CheckPasswordAsync(applicationUser,Password);
+            if(result == false)
+            {
+                return null;
+            }
+            return applicationUser.Id;
+        }
+
+        async public Task<string?> GetEmailAsync(Guid userId)
+        {
+            var applicationUser = await _userManager.FindByIdAsync(userId.ToString());
+            if(applicationUser == null)
+            {
+                return null;
+            }
+            return applicationUser.Email;
         }
     }
 }

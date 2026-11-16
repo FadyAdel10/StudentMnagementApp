@@ -22,6 +22,7 @@ namespace StudentSkillManagement.Infrastructure
         {
             services.Configure<JwtOptions>(configuration.GetSection(JwtOptions.SectionName));
             services.AddScoped<IJwtTokenService, JwtTokenService>();
+            services.Configure<RefreshTokenOptions>(configuration.GetSection(RefreshTokenOptions.SectionName));
             services.AddScoped<IIdentityService, IdentityService>();
 
             var connectionString =
@@ -34,6 +35,10 @@ namespace StudentSkillManagement.Infrastructure
             services.AddScoped<IStudentRepository, StudentRepository>();
             services.AddScoped<ISkillRepository, SkillRepository>();
             services.AddScoped<IStudentSkillRepository, StudentSkillRepository>();
+
+            services.AddScoped<IRefreshTokenRepository, RefreshTokenRepository>();
+            services.AddSingleton<IRefreshTokenService, RefreshTokenService>();
+
 
             return services;
         }

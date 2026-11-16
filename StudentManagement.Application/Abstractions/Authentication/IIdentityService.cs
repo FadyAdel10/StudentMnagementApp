@@ -8,5 +8,7 @@ namespace StudentSkillManagement.Application.Abstractions.Authentication
     {
         Task<IdentityOperationResult> RegisterAsync(string Email, string Password);
         Task<IList<string>> GetRolesAsync(Guid UserId);
+        Task<Guid?> ValidateCredentialsAsync(string Email, string Password);
+        Task<string?> GetEmailAsync(Guid userId);
     }
 }
