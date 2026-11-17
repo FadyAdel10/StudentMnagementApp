@@ -79,7 +79,8 @@ namespace StudentSkillManagement.Application.Features.Authentication.Commands.Re
             storedToken.UserId,
             userEmail,
             newAccessToken,
-            newRefreshTokenRaw);
+            newRefreshTokenRaw, 
+            storedToken.ExpiresAtUtc);
         }
     }
 }

@@ -1,222 +1,212 @@
 # Student & Skill Management System
 ## System Specification: Current State, MVP Scope & Future Roadmap
 
+> **Last Updated**: November 16, 2026  
+> **Backend Architecture**: ASP.NET Core Web API (Clean Architecture + CQRS + EF Core + ASP.NET Core Identity)  
+> **Database**: SQL Server / LocalDB  
+
 ---
 
-## 1. Current Situation (As-Is State)
+## 1. Project Roadmap Progress & Status Overview
 
-### 1.1 Backend State
+```mermaid
+flowchart LR
+    M1["1. Core Backend CRUD<br/>(Students & Skills)"]
+    M2["2. Student-Skill Relations<br/>(Proficiencies & Queries)"]
+    M3["3. Security & Auth<br/>(Identity, JWT, Refresh Tokens)"]
+    M4["4. Global Error Handling<br/>(Exception Middleware)"]
+    M5["5. Frontend Client SPA<br/>(React / Angular / Vite)"]
+    M6["6. End-to-End MVP Release<br/>(Testing & Integration)"]
+
+    style M1 fill:#22c55e,stroke:#15803d,color:#fff
+    style M2 fill:#22c55e,stroke:#15803d,color:#fff
+    style M3 fill:#22c55e,stroke:#15803d,color:#fff
+    style M4 fill:#f59e0b,stroke:#d97706,color:#fff
+    style M5 fill:#ef4444,stroke:#b91c1c,color:#fff
+    style M6 fill:#64748b,stroke:#475569,color:#fff
+
+    M1 --> M2 --> M3 --> M4 --> M5 --> M6
+```
+
+### Executive Status Summary
+- **Backend MVP Scope**: **~95% Completed** (All core domain entities, repositories, CQRS commands/queries, API endpoints, CORS, and full Identity/JWT/Refresh Token authentication are live; Global Exception Middleware remains).
+- **Frontend MVP Scope**: **0% (Ready to Begin)** (API contracts and documentation are prepared; client project needs initialization).
+- **Overall MVP Progress**: **~50%** (Backend foundation is rock-solid and ahead of schedule with Phase 3 Auth fast-tracked).
+
+---
+
+## 2. Current Situation (As-Is State - Verified November 2026)
+
+### 2.1 Backend State
+| Area | Status | Verified Implementation Details |
+|---|---|---|
+| **Architecture** | ✅ **Complete** | Clean Architecture (`Domain`, `Application`, `Infrastructure`, `Presentation`) with CQRS handler pattern and EF Core repository layer. |
+| **Students Module** | ✅ **100% Done** | - [`Student`](file:///c:/ITI/StudentManagementApp/StudentMnagementApp/StudentManagement.Domain/Entities/Student/Student.cs) domain entity with full validation.<br>- Full CRUD commands and queries implemented.<br>- Query responses return full student details **with assigned skills** and proficiency labels.<br>- `GetAll` includes search filtering (`searchTerm` on Name & Email) and status filtering (`isActive`).<br>- Secured via `[Authorize]` JWT Bearer attribute. |
+| **Skills Module** | ✅ **100% Done** | - [`Skill`](file:///c:/ITI/StudentManagementApp/StudentMnagementApp/StudentManagement.Domain/Entities/Skill/Skill.cs) domain bug fixed (`SetName(name)`).<br>- [`SkillRepository`](file:///c:/ITI/StudentManagementApp/StudentMnagementApp/StudentManagement.Infrastructure/Repositories/SkillRepository.cs) implemented.<br>- Full CQRS: Create, Update, Toggle Status, GetById, GetAll.<br>- [`SkillsController`](file:///c:/ITI/StudentManagementApp/StudentMnagementApp/StudentManagement.Presentation/Controllers/SkillsController.cs) public endpoints verified. |
+| **Student-Skills Module** | ✅ **100% Done** | - [`StudentSkill`](file:///c:/ITI/StudentManagementApp/StudentMnagementApp/StudentManagement.Domain/Entities/StudentSkill/StudentSkill.cs) entity and [`ProficiencyLevel`](file:///c:/ITI/StudentManagementApp/StudentMnagementApp/StudentManagement.Domain/Entities/StudentSkill/ProficiencyLevel.cs) enum (Beginner, Intermediate, Advanced, Expert).<br>- Full CQRS commands: Assign skill, update proficiency level, remove skill.<br>- CQRS query: Get all skills for student.<br>- Endpoints live under `/api/students/{studentId}/skills`. |
+| **Authentication & Security** | ✅ **100% Done** *(Fast-tracked from Phase 3)* | - ASP.NET Core Identity integration with `ApplicationUser`.<br>- JWT Bearer authentication with configurable secret key, issuer, and audience (60-minute expiry).<br>- Cryptographically secure Refresh Token system (7-day expiry) with token hashing (SHA-256), token rotation, and reuse detection (token family invalidation).<br>- Concurrency token row version migration applied to database.<br>- [`AuthController`](file:///c:/ITI/StudentManagementApp/StudentMnagementApp/StudentManagement.Presentation/Controllers/AuthController.cs) provides `/api/auth/register`, `/api/auth/login`, `/api/auth/refresh`, and `/api/auth/logout`.<br>- Swagger UI configured with Bearer token authentication support. |
+| **CORS Policy** | ✅ **Complete** | Policy `"FrontendPolicy"` registered and active in `Program.cs` allowing any origin, method, and header. |
+| **Global Exception Handling** | ⏳ **Pending** | `// To be done: Add global exception middleware` noted in `Program.cs`. Custom ProblemDetails formatting needed for domain exceptions. |
+
+### 2.2 Frontend State
 | Area | Status | Details |
 |---|---|---|
-| **Architecture** | Ready | Clean Architecture (`Domain`, `Application`, `Infrastructure`, `Presentation`) with CQRS handler pattern. |
-| **Students Module** | **~75% Done** | - Domain entity [`Student`](file:///c:/ITI/StudentManagementApp/StudentMnagementApp/StudentManagement.Domain/Entities/Student/Student.cs) is complete.<br>- Basic CRUD commands/queries exist.<br>- [`StudentsController`](file:///c:/ITI/StudentManagementApp/StudentMnagementApp/StudentManagement.Presentation/Controllers/StudentsController.cs) provides: `POST /api/students`, `GET /api/students/{id}`, `GET /api/students`, `PUT /api/students/{id}`, `PATCH /api/students/{id}/status`.<br>- *Missing*: Does not return student skills in query responses, lacks search/pagination. |
-| **Skills Module** | **~15% Done** | - Entity [`Skill`](file:///c:/ITI/StudentManagementApp/StudentMnagementApp/StudentManagement.Domain/Entities/Skill/Skill.cs) exists in Domain, but has a **critical bug**: line 32 calls `SetName(Name)` instead of `SetName(name)`, throwing an exception on every creation attempt.<br>- *Missing*: No repository, no CQRS handlers, no API endpoints. |
-| **Student-Skills Module** | **~15% Done** | - Entity [`StudentSkill`](file:///c:/ITI/StudentManagementApp/StudentMnagementApp/StudentManagement.Domain/Entities/StudentSkill/StudentSkill.cs) and enum [`ProficiencyLevel`](file:///c:/ITI/StudentManagementApp/StudentMnagementApp/StudentManagement.Domain/Entities/StudentSkill/ProficiencyLevel.cs) (Beginner, Intermediate, Advanced, Expert) exist in Domain and EF Core.<br>- *Missing*: No way to assign, update, remove, or view skills for a student via the API. |
-| **Cross-Cutting Concerns** | **Missing** | - **No CORS**: Any frontend running on `localhost` will be blocked by browsers.<br>- **No Global Exception Handling**: Errors return raw 500 errors instead of structured responses.<br>- **No Pagination/Filtering**: `GetAll` dumps the whole database into memory. |
-
-### 1.2 Frontend State
-| Area | Status | Details |
-|---|---|---|
-| **Client Application** | **0% (Not Started)** | No frontend project exists yet in the workspace. |
+| **Client Application** | ⏳ **0% (Not Started)** | No frontend directory or project setup yet. API documentation ready at [`API_DOCUMENTATION_FOR_FRONTEND.md`](file:///c:/ITI/StudentManagementApp/StudentMnagementApp/API_DOCUMENTATION_FOR_FRONTEND.md). |
 
 ---
 
-## 2. MVP Scope (Minimum Viable Product)
+## 3. Detailed MVP Feature Checklist
 
-> **MVP Goal**: Deliver a fully working, connected end-to-end web system where an admin can:
-> 1. Manage Students (create, view, update profile, toggle active/inactive).
-> 2. Manage a Skill Catalog (create skills, view list, toggle active/inactive).
-> 3. Assign Skills to Students with Proficiency Levels (Beginner, Intermediate, Advanced, Expert) and update/remove them.
-> 4. View a Student's full profile displaying all their assigned skills and proficiency levels.
+### 3.1 Backend Features
 
----
-
-### 2.1 Backend MVP Features
-
-The backend team needs to complete the following 4 core feature sets:
-
-#### Feature B-1: Frontend Enablers (Fixes & CORS)
-- **B-1.1**: Fix bug in [`Skill.cs`](file:///c:/ITI/StudentManagementApp/StudentMnagementApp/StudentManagement.Domain/Entities/Skill/Skill.cs#L32) (`SetName(name)`).
-- **B-1.2**: Enable CORS in [`Program.cs`](file:///c:/ITI/StudentManagementApp/StudentMnagementApp/StudentManagement.Presentation/Program.cs) to allow the frontend dev server (e.g., `http://localhost:5173` or `http://localhost:3000`).
-- **B-1.3**: Add basic Global Exception Handling middleware returning standard ProblemDetails (400 Bad Request, 404 Not Found, 409 Conflict).
-
-#### Feature B-2: Skills Catalog API
-Create complete CRUD for skills:
-- **`GET /api/skills`**: Return list of skills (optional filter `?isActive=true`).
-- **`GET /api/skills/{id}`**: Return single skill details.
-- **`POST /api/skills`**: Create new skill (`name`, `description`).
-- **`PUT /api/skills/{id}`**: Update skill name and description.
-- **`PATCH /api/skills/{id}/status`**: Toggle skill status (`isActive: true/false`).
-
-#### Feature B-3: Student-Skill Assignment API
-Allow linking students with skills and tracking proficiency:
-- **`GET /api/students/{id}/skills`**: Get all skills assigned to a student (Skill ID, Skill Name, Proficiency Level integer & name).
-- **`POST /api/students/{id}/skills`**: Assign a skill to a student:
-  - Payload: `{ skillId: Guid, proficiencyLevel: 1 | 2 | 3 | 4 }`
-  - Validates skill is active, student is active, and relation doesn't already exist.
-- **`PUT /api/students/{id}/skills/{skillId}`**: Update proficiency level:
-  - Payload: `{ proficiencyLevel: 1 | 2 | 3 | 4 }`
-- **`DELETE /api/students/{id}/skills/{skillId}`**: Remove skill from student.
-
-#### Feature B-4: Enhanced Student Queries
-- **B-4.1**: Update `GET /api/students/{id}` response to include the student's assigned skills.
-- **B-4.2**: Add basic search and status filter to `GET /api/students` (`?search=john&isActive=true`).
+| ID | Feature Description | Status | Reference Files |
+|---|---|---|---|
+| **B-1.1** | Fix bug in `Skill.cs` (`SetName(name)`) | ✅ Done | `StudentManagement.Domain/Entities/Skill/Skill.cs` |
+| **B-1.2** | Enable CORS in `Program.cs` (`FrontendPolicy`) | ✅ Done | `StudentManagement.Presentation/Program.cs` |
+| **B-1.3** | Add Global Exception Handling Middleware | ⏳ Pending | `StudentManagement.Presentation/Program.cs` |
+| **B-2.1** | `GET /api/skills` (List catalog skills) | ✅ Done | `SkillsController.cs`, `GetAllSkillsQueryHandler.cs` |
+| **B-2.2** | `GET /api/skills/{id}` (Single skill details) | ✅ Done | `SkillsController.cs`, `GetSkillByIdQueryHandler.cs` |
+| **B-2.3** | `POST /api/skills` (Create skill) | ✅ Done | `SkillsController.cs`, `CreateSkillCommandHandler.cs` |
+| **B-2.4** | `PUT /api/skills/{id}` (Update skill) | ✅ Done | `SkillsController.cs`, `UpdateSkillCommandHandler.cs` |
+| **B-2.5** | `PATCH /api/skills/{id}/status` (Toggle active/inactive) | ✅ Done | `SkillsController.cs`, `ChangeSkillStatusCommandHandler.cs` |
+| **B-3.1** | `GET /api/students/{id}/skills` (List student's skills) | ✅ Done | `StudentsController.cs`, `GetAllStudentSkillsQueryHandler.cs` |
+| **B-3.2** | `POST /api/students/{id}/skills` (Assign skill + proficiency) | ✅ Done | `StudentsController.cs`, `AssignSkillToStudentCommandHandler.cs` |
+| **B-3.3** | `PUT /api/students/{id}/skills/{skillId}` (Update proficiency) | ✅ Done | `StudentsController.cs`, `UpdateProficiencyLevelCommandHandler.cs` |
+| **B-3.4** | `DELETE /api/students/{id}/skills/{skillId}` (Remove skill) | ✅ Done | `StudentsController.cs`, `DeleteStudentSkillCommandHandler.cs` |
+| **B-4.1** | Include assigned skills in `GET /api/students/{id}` response | ✅ Done | `GetStudentByIdQueryHandler.cs` |
+| **B-4.2** | Add `searchTerm` & `isActive` filters in `GET /api/students` | ✅ Done | `GetAllStudentsQueryHandler.cs`, `StudentRepository.cs` |
+| **B-Sec.1**| User Registration (`POST /api/auth/register`) | ✅ Done | `AuthController.cs`, `RegisterCommandHandler.cs` |
+| **B-Sec.2**| User Login (`POST /api/auth/login`) | ✅ Done | `AuthController.cs`, `LoginCommandHandler.cs` |
+| **B-Sec.3**| Refresh Token Rotation (`POST /api/auth/refresh`) | ✅ Done | `AuthController.cs`, `RefreshCommandHandler.cs` |
+| **B-Sec.4**| Logout / Revoke Token (`POST /api/auth/logout`) | ✅ Done | `AuthController.cs`, `RevokeRefreshTokenCommandHandler.cs` |
 
 ---
 
-### 2.2 Frontend MVP Features
+### 3.2 Frontend MVP Features (Immediate Next Phase)
 
-The frontend team needs to build a modern SPA with 3 main screens and a shared layout:
+The frontend client will consume the backend API according to [`API_DOCUMENTATION_FOR_FRONTEND.md`](file:///c:/ITI/StudentManagementApp/StudentMnagementApp/API_DOCUMENTATION_FOR_FRONTEND.md):
 
-#### Screen F-1: Student Directory (`/students`)
-- **Student Table / List**:
-  - Columns: Full Name, Email, Status Badge (Active/Inactive), Count of Skills, Actions.
+#### F-0: Frontend Project Infrastructure
+- [ ] Initialize SPA (Vite + React / Angular / Vue with TypeScript).
+- [ ] Setup UI component library / Tailwind CSS.
+- [ ] Configure Axios / Fetch API client with base URL (`https://localhost:7044`) and JWT Bearer request interceptor.
+- [ ] Setup Axios response interceptor for automatic `/api/auth/refresh` on 401 Unauthorized.
+- [ ] Client-side state/auth context to manage user session and active tokens.
+
+#### F-1: Authentication Screens (`/login`, `/register`)
+- [ ] **Login Screen**: Email & password inputs, remember me, error banners, redirect to `/students`.
+- [ ] **Register Screen**: Email & password validation (matching backend rules: upper, lower, digit, special character).
+
+#### F-2: Student Directory Screen (`/students`)
+- [ ] **Student Table / Grid**:
+  - Columns: Full Name, Email, Status Badge (Active/Inactive), Skills Pill Count, Action Buttons.
   - Quick Search bar (filters by name or email).
   - Status Filter tabs (All, Active, Inactive).
-- **Add Student Modal / Dialog**:
+- [ ] **Add Student Modal / Dialog**:
   - Fields: First Name, Last Name, Email.
-  - Client-side validation: Required fields, valid email format.
-- **Quick Status Toggle**:
-  - One-click Activate / Deactivate button per student with confirmation.
-- **Navigation Action**:
-  - Clicking any student row opens their details screen.
+  - Validation: Required, valid email.
+- [ ] **Status Toggle**:
+  - One-click Activate / Deactivate button with confirmation prompt.
+- [ ] **Row Click**:
+  - Navigates to `/students/:id`.
 
-#### Screen F-2: Student Details & Skill Profile (`/students/:id`)
-- **Student Information Card**:
-  - Display Full Name, Email, Status badge, ID.
-  - "Edit Profile" button to update First Name, Last Name, Email.
-- **Student Skills Section**:
-  - Visual cards or table showing each assigned skill:
-    - Skill Name
-    - Proficiency Level Badge:
-      - 🟢 Beginner (Level 1)
-      - 🔵 Intermediate (Level 2)
-      - 🟣 Advanced (Level 3)
-      - 🟡 Expert (Level 4)
-  - **"Assign New Skill" Action**:
-    - Opens modal with a dropdown of available skills from the Skill Catalog.
-    - Proficiency level selector (Beginner / Intermediate / Advanced / Expert).
-  - **Edit Proficiency Action**:
-    - Change level directly via dropdown or modal.
-  - **Remove Skill Action**:
-    - Delete button with confirmation prompt ("Remove C# from this student?").
+#### F-3: Student Details & Skill Profile Screen (`/students/:id`)
+- [ ] **Student Info Header**:
+  - Name, Email, Status, Edit Profile modal.
+- [ ] **Skills Matrix**:
+  - Cards or table displaying each assigned skill with badge:
+    - 🟢 Beginner (1)
+    - 🔵 Intermediate (2)
+    - 🟣 Advanced (3)
+    - 🟡 Expert (4)
+- [ ] **Assign Skill Modal**:
+  - Dropdown of active catalog skills (from `GET /api/skills`).
+  - Proficiency level picker.
+- [ ] **Change Proficiency Modal / Inline Selector**:
+  - Change level 1–4.
+- [ ] **Remove Skill Button**:
+  - With confirmation modal.
 
-#### Screen F-3: Skill Catalog (`/skills`)
-- **Skill List Table**:
-  - Columns: Skill Name, Description, Status (Active/Inactive), Actions.
-- **Add Skill Modal**:
-  - Fields: Skill Name (required), Description (optional).
-- **Edit Skill Modal**:
-  - Update Name and Description.
-- **Toggle Skill Status**:
-  - Activate or Deactivate skill.
-
-#### Shared Frontend Infrastructure
-- **Navigation Layout**: Clean sidebar or top navbar with links to **Students** and **Skills**.
-- **API Client**: Centralized Axios/fetch instance using environment base URL.
-- **Toast Notifications**: Feedback on every action (e.g., "Student added successfully", "Proficiency updated").
-- **Empty States & Spinners**: Visual loaders during API requests and friendly empty states when tables have no items.
+#### F-4: Skill Catalog Screen (`/skills`)
+- [ ] **Catalog Table**:
+  - Skill Name, Description, Status (Active/Inactive), Actions.
+- [ ] **Create Skill Modal**:
+  - Name (required), Description (optional).
+- [ ] **Edit Skill Modal**:
+  - Update Name & Description.
+- [ ] **Toggle Skill Status**:
+  - Activate / Deactivate.
 
 ---
 
-## 3. MVP API Contract (Backend <-> Frontend Sync)
+## 4. MVP API Contract Overview
 
-| Method | Endpoint | Request Body | Response Body | HTTP Status |
+| Method | Endpoint | Auth | Purpose | Status |
 |---|---|---|---|---|
-| **GET** | `/api/students` | None (Optional `?search=&isActive=`) | `List<StudentDto>` | `200 OK` |
-| **GET** | `/api/students/{id}` | None | `StudentDetailsWithSkillsDto` | `200 OK` / `404` |
-| **POST** | `/api/students` | `{ firstName, lastName, email }` | `{ id }` | `201 Created` / `400` |
-| **PUT** | `/api/students/{id}` | `{ firstName, lastName, email }` | None | `204 NoContent` / `400` / `404` |
-| **PATCH** | `/api/students/{id}/status` | `{ isActive }` | None | `204 NoContent` / `404` |
-| **GET** | `/api/students/{id}/skills` | None | `List<StudentSkillDto>` | `200 OK` / `404` |
-| **POST** | `/api/students/{id}/skills` | `{ skillId, proficiencyLevel }` | None | `201 Created` / `400` / `404` |
-| **PUT** | `/api/students/{id}/skills/{skillId}` | `{ proficiencyLevel }` | None | `204 NoContent` / `400` / `404` |
-| **DELETE** | `/api/students/{id}/skills/{skillId}` | None | None | `204 NoContent` / `404` |
-| **GET** | `/api/skills` | None (Optional `?isActive=`) | `List<SkillDto>` | `200 OK` |
-| **GET** | `/api/skills/{id}` | None | `SkillDto` | `200 OK` / `404` |
-| **POST** | `/api/skills` | `{ name, description }` | `{ id }` | `201 Created` / `400` |
-| **PUT** | `/api/skills/{id}` | `{ name, description }` | None | `204 NoContent` / `400` / `404` |
-| **PATCH** | `/api/skills/{id}/status` | `{ isActive }` | None | `204 NoContent` / `404` |
+| **POST** | `/api/auth/register` | ❌ Public | Register user & receive JWT + Refresh Token | ✅ Live |
+| **POST** | `/api/auth/login` | ❌ Public | Login & receive JWT + Refresh Token | ✅ Live |
+| **POST** | `/api/auth/refresh` | ❌ Public | Rotate refresh token & get fresh access token | ✅ Live |
+| **POST** | `/api/auth/logout` | ❌ Public | Revoke refresh token | ✅ Live |
+| **GET** | `/api/skills` | ❌ Public | List skill catalog | ✅ Live |
+| **GET** | `/api/skills/{id}` | ❌ Public | Get skill by ID | ✅ Live |
+| **POST** | `/api/skills` | ❌ Public | Create skill | ✅ Live |
+| **PUT** | `/api/skills/{id}` | ❌ Public | Update skill | ✅ Live |
+| **PATCH** | `/api/skills/{id}/status` | ❌ Public | Toggle active/inactive skill | ✅ Live |
+| **GET** | `/api/students?searchTerm=&isActive=` | 🔒 Bearer | List students with skills + search/filter | ✅ Live |
+| **GET** | `/api/students/{id}` | 🔒 Bearer | Get student profile with assigned skills | ✅ Live |
+| **POST** | `/api/students` | 🔒 Bearer | Create new student | ✅ Live |
+| **PUT** | `/api/students/{id}` | 🔒 Bearer | Update student profile | ✅ Live |
+| **PATCH** | `/api/students/{id}/status` | 🔒 Bearer | Toggle active/inactive student | ✅ Live |
+| **GET** | `/api/students/{id}/skills` | 🔒 Bearer | Get skills of a student | ✅ Live |
+| **POST** | `/api/students/{id}/skills` | 🔒 Bearer | Assign skill to student (proficiency 1–4) | ✅ Live |
+| **PUT** | `/api/students/{id}/skills/{skillId}` | 🔒 Bearer | Update skill proficiency | ✅ Live |
+| **DELETE** | `/api/students/{id}/skills/{skillId}` | 🔒 Bearer | Remove skill from student | ✅ Live |
 
 ---
 
-## 4. Post-MVP Features (What to Continue On Next)
-
-Once the MVP is functional and verified, the following features will be added in subsequent iterations:
+## 5. Post-MVP Roadmap (Future Phases)
 
 ```
-MVP (Phase 1) ──────────► Phase 2 (Enhancements) ──────────► Phase 3 (Intelligence & Security)
-• Student CRUD           • Dashboard & Charts               • Skill Matcher / Talent Search
-• Skill Catalog          • Pagination & Server Sorting      • Role-Based Access (Admin/Mentor/Student)
-• Skill Assignment       • Skill Categories (Tracks)        • Student Self-Service Portal
-• Proficiency Badges     • Audit Logs (CreatedAt/Modified)  • Export to PDF / Excel CV
+MVP (Phase 1) ─────────────────► Phase 2 (UX & Scale) ─────────────► Phase 3 (Intelligence & Enterprise)
+• Students CRUD (Done)          • Dashboard & Analytics           • Skill Matcher / Talent Search
+• Skill Catalog (Done)          • Pagination & Server Sorting     • Role-Based Access (Admin/Mentor/Student)
+• Skill Assignment (Done)       • Skill Categories (Tracks)       • Student Self-Service Portal
+• Auth & JWT (Done)             • Audit Logs (CreatedAt/By)       • Export to PDF / Excel CV
+• Global Exception Middleware   • Batch Operations                • Notification Webhooks
+• Frontend Client SPA (Next)
 ```
 
 ### Phase 2: User Experience & Scale
 1. **Dashboard & Analytics Screen (`/dashboard`)**:
-   - Total students counter, active percentage.
-   - Skill distribution chart (e.g., bar chart showing top skills across students).
-   - Recent student assignments.
+   - Total students counter, active percentage, skills distribution chart.
 2. **Server-Side Pagination & Sorting**:
-   - Replace simple list fetching with `PagedResult<T>` (`pageIndex`, `pageSize`, `totalPages`, `totalCount`).
-   - Column sorting in data tables (sort by Name, Date, Skill Count).
+   - Replace list returns with `PagedResult<T>` (`pageIndex`, `pageSize`, `totalPages`, `totalCount`).
+   - Add column sorting (by Name, Date, Skill count).
 3. **Skill Categories / Specialization Tracks**:
-   - Categorize skills (e.g., *Frontend*, *Backend*, *Cloud / DevOps*, *Mobile*, *Soft Skills*).
-   - Filter skill catalog and student profile by category.
+   - Categorize skills (Frontend, Backend, DevOps, Data, Mobile).
 4. **Audit Logging**:
-   - Track `CreatedAtUtc`, `ModifiedAtUtc`, and who modified the student or skill proficiency.
+   - Track `CreatedAtUtc`, `ModifiedAtUtc`, and modified-by user IDs across entities.
 
 ### Phase 3: Strategic & Enterprise Capabilities
 1. **Talent Matcher / Skill Matrix Tool (`/talent-matcher`)**:
-   - Filter students by multiple required skills and minimum proficiency levels (e.g., find students where `C# >= Intermediate` AND `Angular >= Beginner`).
-   - Match percentage indicator for student project assignments or hiring partners.
-2. **Authentication, Authorization & Roles**:
-   - Identity management (ASP.NET Core Identity + JWT Bearer).
-   - Roles:
-     - `Admin`: Full access to students, skills, and configuration.
-     - `Instructor / Mentor`: Can view students and update skill proficiencies.
-     - `Student`: Read-only view of own profile and skills.
+   - Multi-criteria filter: find students meeting combination of skills & minimum proficiency (e.g. `C# >= Advanced` AND `Angular >= Intermediate`).
+2. **Fine-Grained Role-Based Access Control (RBAC)**:
+   - Expand existing Identity roles (`Admin`, `Instructor`, `Student`) into endpoint policies.
 3. **Student Self-Service Portal**:
-   - Students can log in, view their own profile, and request skill endorsements or updates.
-4. **Export & Reporting**:
-   - Export student skill profiles to PDF (resume summary) or CSV/Excel for batch reporting.
+   - Students view their own profile and request skill endorsements.
+4. **Resume & CV Export**:
+   - Generate PDF student skill profile resumes.
 
 ---
 
-## 5. Development Action Plan
+## 6. Immediate Next Steps / Action Items
 
-```mermaid
-flowchart TD
-    subgraph Step1 ["Step 1: Backend Foundation (Hours 1-2)"]
-        B1["Fix Skill.cs bug"]
-        B2["Enable CORS in Program.cs"]
-        B3["Add Global Exception Middleware"]
-    end
-
-    subgraph Step2 ["Step 2: Backend Features (Hours 2-5)"]
-        B4["Build Skill Repository & Endpoints"]
-        B5["Build StudentSkill Assignment Endpoints"]
-        B6["Enrich Student Details Query with Skills"]
-    end
-
-    subgraph Step3 ["Step 3: Frontend Scaffolding (Parallel)"]
-        F1["Initialize SPA (React/Vite/Angular)"]
-        F2["Configure API Client & Layout Navbar"]
-    end
-
-    subgraph Step4 ["Step 4: Frontend MVP Screens (Hours 4-8)"]
-        F3["Build Student Directory Screen"]
-        F4["Build Student Profile & Skills Screen"]
-        F5["Build Skill Catalog Screen"]
-    end
-
-    subgraph Step5 ["Step 5: MVP Verification"]
-        V1["End-to-end testing: Create Student -> Create Skill -> Assign Skill -> Verify Profile"]
-    end
-
-    Step1 --> Step2
-    Step1 --> Step3
-    Step2 --> Step4
-    Step3 --> Step4
-    Step4 --> Step5
-```
+1. **Backend Polishing (Remaining 5%)**:
+   - Implement Global Exception Handling Middleware in `Presentation` returning RFC 7807 `ProblemDetails` for validation and domain exceptions.
+2. **Frontend Initialization (Immediate Priority)**:
+   - Initialize the frontend project (e.g., `client` or `frontend` directory).
+   - Configure HTTP client with interceptors for JWT Bearer token and automatic refresh token rotation.
+   - Build Authentication screens (`/login`, `/register`).
+   - Build Student Directory, Student Profile, and Skill Catalog screens.
+3. **End-to-End Verification**:
+   - Verify complete user journey: Register -> Login -> Create Student -> Create Skill -> Assign Skill -> Update Proficiency -> Refresh Token -> Logout.

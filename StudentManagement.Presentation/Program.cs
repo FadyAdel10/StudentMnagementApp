@@ -26,9 +26,10 @@ builder.Services.AddCors(options =>
     {
         // modify it to required frontend port
         policy
-            .AllowAnyOrigin()
+            .WithOrigins("http://localhost:5118")
             .AllowAnyHeader()
-            .AllowAnyMethod();
+            .AllowAnyMethod()
+            .AllowCredentials();
     });
 });
 

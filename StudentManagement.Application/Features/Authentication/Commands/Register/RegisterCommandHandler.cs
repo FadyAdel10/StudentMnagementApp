@@ -47,7 +47,7 @@ namespace StudentSkillManagement.Application.Features.Authentication.Commands.Re
 
             await _refreshTokenRepository.SaveChangesAsync();
 
-            return new RegisterResultDto(true, new AuthResponseDto(userId, command.Email, accessToken, rawRefreshToken), Array.Empty<string>());
+            return new RegisterResultDto(true, new AuthResponseDto(userId, command.Email, accessToken, rawRefreshToken, refreshToken.ExpiresAtUtc), Array.Empty<string>());
 
         }
     }

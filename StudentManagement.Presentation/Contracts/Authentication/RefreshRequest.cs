@@ -1,4 +1,8 @@
-﻿namespace StudentSkillManagement.Presentation.Contracts.Authentication
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace StudentSkillManagement.Presentation.Contracts.Authentication
 {
-    public sealed record RefreshRequest(string RefreshToken);
+    public sealed record RefreshRequest(
+        [Required]
+        string RefreshToken);
 }

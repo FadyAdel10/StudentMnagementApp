@@ -4,5 +4,5 @@ using System.Text;
 
 namespace StudentSkillManagement.Application.Features.Authentication.DTOs
 {
-    public sealed record AuthResponseDto(Guid UserId, string Email, string AccessToken, string RefreshToken);
+    public sealed record AuthResponseDto(Guid UserId, string Email, string AccessToken, string RefreshToken,DateTime RefreshTokenExpiresAtUtc);
 }

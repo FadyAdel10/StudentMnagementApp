@@ -5,6 +5,7 @@ using StudentSkillManagement.Application.Features.Authentication.Commands.Login;
 using StudentSkillManagement.Application.Features.Authentication.Commands.Refresh;
 using StudentSkillManagement.Application.Features.Authentication.Commands.Register;
 using StudentSkillManagement.Application.Features.Authentication.Commands.RevokeRefreshToken;
+using StudentSkillManagement.Application.Features.Authentication.DTOs;
 using StudentSkillManagement.Application.Features.Skills.Commands.CreateSkill;
 using StudentSkillManagement.Presentation.Contracts.Authentication;
 using StudentSkillManagement.Presentation.Contracts.Skills;
@@ -39,7 +40,10 @@ namespace StudentSkillManagement.Presentation.Controllers
             if (!result.Succeeded)
                 return BadRequest(new { result.Errors });
 
-            return Ok(result.Auth);
+            var response = CreateAuthenticationResponse(result.Auth);
+
+
+            return Ok(response);
         }
 
         [HttpPost("login")]
@@ -55,13 +59,21 @@ namespace StudentSkillManagement.Presentation.Controllers
                     message = "Invalid email or password."
                 });
 
-            return Ok(result);
+            var response = CreateAuthenticationResponse(result);
+
+
+            return Ok(response);
         }
 
         [HttpPost("refresh")]
-        public async Task<IActionResult> Refresh([FromBody] Contracts.Authentication.RefreshRequest request, CancellationToken cancellationToken = default)
+        public async Task<IActionResult> Refresh( CancellationToken cancellationToken = default)
         {
-            var command = new RefreshCommand(request.RefreshToken);
+            var refreshToken = Request.Cookies[RefreshTokenCookieSettings.CookieName];
+
+            if (string.IsNullOrWhiteSpace(refreshToken))
+                return Unauthorized();
+
+            var command = new RefreshCommand(refreshToken);
 
             var result = await _refreshCommandHandler.Handle(command, cancellationToken);
 
@@ -71,13 +83,21 @@ namespace StudentSkillManagement.Presentation.Controllers
                     message = "Invalid or expired refresh token."
                 });
 
-            return Ok(result);
+            var response = CreateAuthenticationResponse(result);
+
+
+            return Ok(response);
         }
 
         [HttpPost("logout")]
-        public async Task<IActionResult> Logout([FromBody] RevokeRefreshTokenRequest request, CancellationToken cancellationToken = default)
+        public async Task<IActionResult> Logout( CancellationToken cancellationToken = default)
         {
-            var command = new RevokeRefreshTokenCommand(request.RefreshToken);
+            var refreshToken = Request.Cookies[RefreshTokenCookieSettings.CookieName];
+
+            if (string.IsNullOrWhiteSpace(refreshToken))
+                return Unauthorized();
+
+            var command = new RevokeRefreshTokenCommand(refreshToken);
 
             var result = await _revokeRefreshTokenCommandHandler.Handle(command, cancellationToken);
 
@@ -86,8 +106,24 @@ namespace StudentSkillManagement.Presentation.Controllers
                 {
                     message = "Error in revoke refresh token"
                 });
+            Response.Cookies.Delete(RefreshTokenCookieSettings.CookieName);
 
             return NoContent();
         }
+
+        private AuthenticationResponse CreateAuthenticationResponse(
+            AuthResponseDto auth)
+            {
+                Response.Cookies.Append(
+                    RefreshTokenCookieSettings.CookieName,
+                    auth.RefreshToken,
+                    RefreshTokenCookieSettings.Create(auth.RefreshTokenExpiresAtUtc));
+
+                return new AuthenticationResponse(
+                    auth.UserId,
+                    auth.Email,
+                    auth.AccessToken
+                );
+            }
     }
 }
